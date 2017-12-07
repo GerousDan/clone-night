@@ -116,7 +116,7 @@ var Narration = (function (_super) {
             sp.loadTexture('item_smallON');
             SR.PlaySound('sfx_tap');
             sp.data.selected = true;
-            SetGender(sp.name);
+            Gender = sp.name;
         }
     };
     Narration.prototype.Togglelanguage = function () {

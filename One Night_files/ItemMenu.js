@@ -32,8 +32,12 @@ var ItemMenu = (function (_super) {
             this.inputEnabled = true;
             this.events.onInputDown.add(this.ToggleOnOFF, this);
         }
-        // if( !SFT[PositionIn_SFT] ){this.alpha = 0.5;}
-        //edit Action
+        if (SFT[this.data.index] == true) {
+            this.alpha = 1;
+        }
+        else {
+            this.alpha = 0.5;
+        }
         this.Fcounter = 0;
         this.FontTimerEvent = this.game.time.events.loop(Phaser.Timer.SECOND * 0.2, this.CheckFont, this);
     }

@@ -11,6 +11,8 @@
 /// <reference path="GameTimer.ts"/>
 /// <reference path="RoleTimer.ts"/>
 /// <reference path="Background.ts"/>
+/// <reference path="PlayState.ts"/>
+/// <reference path="AboutSounds.ts"/>
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -42,6 +44,8 @@ var Main = (function (_super) {
         this._Settings.visible = false;
         this._Settings._BackBtn.events.onInputDown.add(this.ToggleSetting, this);
         this._Settings._HelpBtn.events.onInputDown.add(this.HM, this);
+        this._PlayState = new PlayState(this.game);
+        this._PlayState.visible = false;
     };
     Main.prototype.AddList = function () {
         //console.log(List1Selected,List2Selected,List3Selected,List4Selected,List5Selected);
@@ -91,6 +95,20 @@ var Main = (function (_super) {
             this._HomeMenu.SetPlayText(SelectedCrads.length);
             this._HomeMenu.RefreshGameTime();
             RunUpdate = false;
+        }
+        if (StartPlay) {
+            this._HomeMenu.visible = false;
+            this._Settings.visible = false;
+            this._List.visible = false;
+            this._PlayState.visible = true;
+            this._PlayState.Start();
+            StartPlay = false;
+        }
+        if (this._PlayState.visible && this._PlayState.QUIT) {
+            this._HomeMenu.visible = true;
+            this._Settings.visible = false;
+            this._List.visible = true;
+            this._PlayState.visible = false;
         }
     };
     return Main;

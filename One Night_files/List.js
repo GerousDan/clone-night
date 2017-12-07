@@ -1,5 +1,6 @@
 /// <reference path="phaser.d.ts"/>
 /// <reference path="Config.ts"/>
+/// <reference path="Icon.ts"/>
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -11,16 +12,16 @@ var List = (function (_super) {
         _super.call(this, game, 0, 0, '');
         this.Y = null;
         this.H = 0;
-        this.Yi = 197;
+        this.Yi = 130; //197
         this.MustTweenDown = false;
         this.MustTweenUP = false;
         this.CurrentnameCounter = -1;
         this.SoundNameIsPlaying = false;
         this.IsScrolling = false;
         this.AllT = [];
-        this.TextMaxWidth = 146;
-        console.log("-----------------------------------> List Constructor");
-        this.GTstyle = { font: "bold 20px kabel", fill: "#FFFFFF", boundsAlignH: "center", boundsAlignV: "middle" };
+        this.TextMaxWidth = 130;
+        //console.log("-----------------------------------> List Constructor");
+        this.GTstyle = { font: "bold 20px kabel", fill: "#FFFFFF", boundsAlignH: "center", boundsAlignV: "center" };
         this.AddIcons();
         this.Fcounter = 0;
         this.FontTimerEvent = this.game.time.events.loop(Phaser.Timer.SECOND * 0.2, this.CheckFont, this);
@@ -39,33 +40,24 @@ var List = (function (_super) {
         var UsedNames = []; // here we save add names
         for (var i = 0; i < currentList.length; i++) {
             for (var N = 0; N < currentList[i].N; N++) {
-                var sp = this.game.make.sprite(0, 0, currentList[i].K, currentList[i].F);
-                var img = this.game.make.sprite(0, 0, currentList[i].K, currentList[i].F);
-                sp.name = currentList[i].icon;
-                sp.events.onInputDown.add(this.splistener, this);
-                sp.events.onInputUp.add(this.removesplistener, this);
-                var Cadre = this.game.make.sprite(sp.width / 2, sp.height + 4, 'IconC');
-                Cadre.anchor.set(0.5, 1);
-                sp.addChild(Cadre);
-                sp.addChild(img);
-                // console.log("about sp",sp.width,sp.height);
-                //console.log("about Cadre",Cadre.width,Cadre.height);
-                //Max chars :14
-                var st = sp.name.toUpperCase();
-                ;
-                if (Translate(sp.name + ' = ')) {
-                    st = Translate(sp.name + ' = ').toUpperCase();
-                }
-                var TxtName = this.game.make.text(0, 0, st.toUpperCase(), this.GTstyle);
+                var spC = this.game.make.sprite(0, 0, '');
+                spC.anchor.set(0.5, 0.5);
+                var sp = new Icon(this.game);
+                sp.img.loadTexture(currentList[i].K, currentList[i].F);
+                sp.scale.set(0.345, 0.345);
+                spC.addChild(sp);
+                spC.name = currentList[i].icon;
+                var TxtName = this.game.make.text(-2, 60, "azertyuiopqs1", this.GTstyle);
                 TxtName.anchor.set(0.5, 0.5);
-                TxtName.x = Cadre.x - 2; //(sp.width-TxtName.width)/2;
-                TxtName.y = (sp.height - 8);
-                sp.addChild(TxtName);
-                var TxtName2 = this.game.make.text(0, 0, "TXT2", this.GTstyle);
+                spC.addChild(TxtName);
+                var TxtName2 = this.game.make.text(2, 40, "azertyuiopqs2", this.GTstyle);
                 TxtName2.anchor.set(0.5, 0.5);
-                TxtName2.x = Cadre.x; //(sp.width-TxtName.width)/2;
-                TxtName2.y = (sp.height - 26);
-                sp.addChild(TxtName2);
+                spC.addChild(TxtName2);
+                //Max chars :12
+                var st = spC.name.toUpperCase();
+                if (Translate(spC.name + ' = ')) {
+                    st = Translate(spC.name + ' = ').toUpperCase();
+                }
                 /*OOOOOOOOOOOOOOO*/
                 if (OP[1].Selected) {
                     TxtName.alpha = 1;
@@ -77,11 +69,15 @@ var List = (function (_super) {
                 }
                 var spl = [];
                 spl = st.split(" ");
-                var TextScale = 0.95;
+                var TextScale = 1;
                 //break line
                 if (st.length > 15 && spl.length > 2) {
                     var s2 = spl[1]; // because spl[0] = ""
                     var s1 = st.replace(spl[1], "");
+                    if (spl.length > 3) {
+                        s2 = spl[1] + " " + spl[2];
+                        s1 = st.replace(s2, "");
+                    }
                     TxtName2.text = s2;
                     TxtName.text = s1;
                     TxtName2.visible = true;
@@ -89,31 +85,26 @@ var List = (function (_super) {
                 else {
                     TxtName.text = st;
                     TxtName2.visible = false;
-                    //width correction
-                    if (TxtName.width > this.TextMaxWidth) {
-                        TextScale = this.TextMaxWidth / TxtName.width;
-                        TxtName.scale.set(TextScale, TextScale);
-                    }
-                    else {
-                        TxtName.scale.set(sp.scale.x, sp.scale.y);
-                    }
+                }
+                ScaleTextWidth(TxtName, this.TextMaxWidth);
+                if (s2) {
+                    ScaleTextWidth(TxtName2, this.TextMaxWidth);
                 }
                 this.AllT.push(TxtName);
                 this.AllT.push(TxtName2);
-                sp.data = { _Cadre: Cadre, _TXT: TxtName, _TXT2: TxtName2, TXTscale: TextScale };
-                var ind = SelectedCrads.indexOf(sp.name);
+                spC.events.onInputDown.add(this.splistener, this);
+                spC.events.onInputUp.add(this.removesplistener, this);
+                spC.data = { _TXT: TxtName, _TXT2: TxtName2 };
+                var ind = SelectedCrads.indexOf(spC.name);
                 if (ind != -1) {
-                    sp.alpha = 1;
-                    Cadre.alpha = 1;
+                    spC.alpha = 1;
                     SelectedCrads[ind] = "*"; //remove from array
-                    UsedNames.push(sp.name); //save to new array
+                    UsedNames.push(spC.name); //save to new array
                 }
                 else {
-                    sp.alpha = 0.6;
-                    Cadre.alpha = 0;
+                    spC.alpha = 0.6;
                 }
-                sp.scale.set(0.9, 0.9);
-                this.IconsGroup.add(sp);
+                this.IconsGroup.add(spC);
             }
         }
         //refill the array
@@ -133,7 +124,7 @@ var List = (function (_super) {
         this.game.input.onUp.add(this.onUp, this);
     };
     List.prototype.onDown = function () {
-        if (this.game.input.y > 950 || this.game.input.y < 214) {
+        if (this.game.input.y > 960 || this.game.input.y < 210) {
             return;
         }
         //console.log("------------------- > on down",this.game.input.y);
@@ -150,7 +141,7 @@ var List = (function (_super) {
         }
         if (this.MustTweenDown) {
             // console.log("execute,MustTweenDown to ",950 - this.IconsGroup.height-52);
-            this.game.add.tween(this.IconsGroup).to({ x: this.IconsGroup.x, y: Math.floor(980 - this.IconsGroup.height - 97) }, 100, "Linear", true, 0);
+            this.game.add.tween(this.IconsGroup).to({ x: this.IconsGroup.x, y: Math.floor(980 - this.IconsGroup.height - 280) }, 100, "Linear", true, 0);
         }
     };
     List.prototype.update = function () {
@@ -188,20 +179,20 @@ var List = (function (_super) {
             if (this.IconsGroup.y + (this.game.input.y - this.Y) > 400) {
                 return;
             }
-            if (this.IconsGroup.y + this.IconsGroup.height < 800) {
+            if (this.IconsGroup.y + this.IconsGroup.height < 600) {
                 return;
             }
             this.IconsGroup.y = this.IconsGroup.y + (this.game.input.y - this.Y);
             this.Y = this.game.input.y;
             //console.log("this.IconsGroup.y",this.IconsGroup.y);
-            if (this.IconsGroup.y + this.IconsGroup.height < 980 && this.IconsGroup.height > 800) {
+            if (this.IconsGroup.y + this.IconsGroup.height < 600 && this.IconsGroup.height > 800) {
                 // console.log("limit down");
                 this.MustTweenDown = true;
             }
             else {
                 this.MustTweenDown = false;
             }
-            if (this.IconsGroup.y + this.IconsGroup.height < 980 && this.IconsGroup.height < 800) {
+            if (this.IconsGroup.y + this.IconsGroup.height < 600 && this.IconsGroup.height < 800) {
                 // console.log("case 1",this.IconsGroup.y+this.IconsGroup.height);
                 // console.log(this.IconsGroup.y,this.Yi);
                 this.MustTweenUP = true;
@@ -233,19 +224,21 @@ var List = (function (_super) {
         if (!this.SoundNameIsPlaying && !this.IsScrolling) {
             if (sp.alpha == 1) {
                 sp.alpha = 0.6;
-                sp.data._Cadre.alpha = 0;
                 //remove from the selected cards
                 removeCard(sp.name);
+                SR.PlaySound('sfx_tap');
             }
             else {
                 sp.alpha = 1;
-                sp.data._Cadre.alpha = 1;
-                sp.data._TXT.scale.set(1.5, 1.5);
-                this.game.add.tween(sp.data._TXT.scale).to({ x: sp.data.TXTscale, y: sp.data.TXTscale }, 300, "Linear", true);
-                sp.data._TXT2.scale.set(1.5, 1.5);
-                this.game.add.tween(sp.data._TXT2.scale).to({ x: 1, y: 1 }, 300, "Linear", true);
+                // console.log(sp.name, ":tween SC",sp.data.TXTscale);
+                // if( !sp.data.TXTscale ){sp.data.TXTscale = 1;}
+                // sp.data._TXT.scale.set(1.25,1.25);
+                // this.game.add.tween(sp.data._TXT.scale).to({ x: sp.data.TXTscale, y: sp.data.TXTscale }, 300, "Linear", true);
+                //  sp.data._TXT2.scale.set(1.25,1.25);
+                //  this.game.add.tween(sp.data._TXT2.scale).to({ x: sp.data.TXTscale, y: sp.data.TXTscale }, 300, "Linear", true);
                 //add to the selected cards
                 AddCard(sp.name);
+                SR.PlaySound('sfx_tap');
             }
         }
         this.SoundNameIsPlaying = false;
@@ -280,10 +273,14 @@ var List = (function (_super) {
                 //console.log("st",st);
                 var spl = [];
                 spl = st.split(" ");
-                var TextScale = 0.95;
-                if (st.length > 15 && spl.length > 2) {
+                var TextScale = 1;
+                if (st.length > 12 && spl.length > 2) {
                     var s2 = spl[1]; // because spl[0] = ""
                     var s1 = st.replace(spl[1], "");
+                    if (spl.length > 3) {
+                        s2 = spl[1] + " " + spl[2];
+                        s1 = st.replace(s2, "");
+                    }
                     item.data._TXT2.text = s2;
                     item.data._TXT.text = s1;
                     item.data._TXT2.visible = true;
@@ -291,15 +288,13 @@ var List = (function (_super) {
                 else {
                     item.data._TXT.text = st;
                     item.data._TXT2.visible = false;
-                    if (item.data._TXT.width > this.TextMaxWidth) {
-                        TextScale = this.TextMaxWidth / item.data._TXT.width;
-                        item.data._TXT.scale.set(TextScale, TextScale);
-                    }
-                    else {
-                        item.data._TXT.scale.set(item.scale.x, item.scale.y);
-                    }
                 }
-                item.data.TXTscale = TextScale;
+                item.data._TXT.scale.set(1, 1);
+                item.data._TXT2.scale.set(1, 1);
+                ScaleTextWidth(item.data._TXT, this.TextMaxWidth);
+                if (s2) {
+                    ScaleTextWidth(item.data._TXT2, this.TextMaxWidth);
+                }
             }
             /*OOOOOOOOOOOOOOO*/
             if (OP[1].Selected) {

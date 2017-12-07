@@ -165,6 +165,7 @@ var Settings = (function (_super) {
     };
     Settings.prototype.BackCliked = function () {
         RunUpdate_Settings = true;
+        SetGender(Gender);
         if (this.BackTo == "Main") {
             this.visible = false;
         }

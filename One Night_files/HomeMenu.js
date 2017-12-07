@@ -39,6 +39,7 @@ var HomeMenu = (function (_super) {
         this._Play = this.game.make.button(this.game.world.centerX, 0, 'button', this.Action, this);
         this._Play.anchor.set(0.5, 0.5);
         this._Play.y = this.game.world.height * 7.2 / 8;
+        this._Play.name = "PLAY";
         this.PlayText = this.game.make.text(0, 0, Translate('Play = '), this.Pstyle);
         this.PlayText.anchor.set(0.5, 0.5);
         this.PlayText.x = this._Play.x;
@@ -66,7 +67,7 @@ var HomeMenu = (function (_super) {
             bt.alpha = 0;
             Enable = false;
         }
-        console.log(bt.name);
+        //console.log(bt.name)
         if (bt.name == "bt1") {
             List1Selected = Enable;
             Callback1();
@@ -91,7 +92,10 @@ var HomeMenu = (function (_super) {
             SFT[2] = Enable;
             RunUpdate_Settings = true;
         }
-        //
+        else if (bt.name == "PLAY") {
+            StartPlay = true;
+        }
+        this._Play.alpha = 1;
     };
     HomeMenu.prototype.CheckFont = function () {
         this.GameTimeText.setStyle(this.GTstyle);

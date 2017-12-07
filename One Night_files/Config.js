@@ -1,6 +1,8 @@
 /// <reference path="phaser.d.ts"/>
 /// <reference path="StarLoader.ts"/>
 /// <reference path="SoundReader.ts"/>
+var anyaliens_names = ["oracle", "alien", "synthetic", "cow", "groob", "zerb", "leader", "psychic", "rascal", "exposer", "blob", "mortician"];
+var anywolves_names = ["werewolf", "alphawolf", "mysticwolf"];
 var Papa;
 var Callback1; //callback to recreate the list of icons
 var SetsA = [];
@@ -9,6 +11,7 @@ var OrderA = [];
 var GameRef;
 var Me; // reference to Main
 var Me_List; //reference to List
+var Me_PlaySate; //reference to List
 var MAxCheck = 10;
 var Languages = [];
 Languages["en"] = { SD: '' };
@@ -20,7 +23,7 @@ Languages["pl"] = { SD: 'pl/' };
 Languages["ca"] = { SD: 'ca/' };
 //default value
 var Language = 'en';
-var Verbose = true;
+var Verbose = false;
 var Sounds_Dir = Languages['en'].SD;
 var Isloading = true;
 var SL;
@@ -28,16 +31,33 @@ var AutoNextState = null;
 var AutoPlaySounds;
 var SR;
 //Settings firstmenu : about the first 3 buttons
-var SFT = [true, true, true, true, true];
+var SFT = [true, true, false, true, true];
 //narration menu
 var Gender;
 var Narrator;
+var CURL = "en";
 var HelpTxt;
 //set default value
 SetGender("male");
+//
 function SetGender(_Gender) {
     Gender = _Gender;
     Narrator = "en_" + 'male' + "_"; //we have only english male ( rules+names)
+    if (Language == "en") {
+        CURL = Gender;
+    }
+    else {
+        CURL = Language;
+    }
+    //name in cache
+    if (OrderA.length > 0 && Gender != 'Gender Specific') {
+        addLoaderStars();
+        //load and play name+rules : we have only the engilsh
+        LoadGroup([
+            { sound: true, key: Language + '_' + Gender + "_" + OrderA[6][0][6], url: 'AllSounds/' + CURL + '/' + Language + '_' + Gender + "_" + OrderA[6][0][6] + '.mp3' },
+            { sound: true, key: Language + '_' + Gender + "_" + OrderA[235][0][6], url: 'AllSounds/' + CURL + '/' + Language + '_' + Gender + "_" + OrderA[235][0][6] + '.mp3' }
+        ]);
+    }
 }
 var VOLUME = 4;
 //game timer Menu
@@ -47,7 +67,6 @@ var GT = { bt1Selected: true,
     bt2Text: "30 Second Warning"
 };
 var MINS = 5;
-var GTEnabled = true;
 //Role Timer
 var RT = {
     bt1Selected: true,
@@ -70,6 +89,7 @@ var OP = [
 var RunUpdate = false; //update play button
 var RunUpdate_Narration = false;
 var RunUpdate_Settings = false;
+var StartPlay = false;
 var Config = {
     DOM_PARENT_ID: 'gameCanvas',
     GW: 640,
@@ -103,29 +123,87 @@ var Group1 = [
     { image: true, key: 'button_add', url: 'images/UI/button_add.png' },
     { image: true, key: 'button_sub', url: 'images/UI/button_sub.png' },
     { image: true, key: 'bezier', url: 'images/UI/bezier.png' },
+    { image: true, key: 'cards_23', url: 'images/UI/cards_23.png' },
     { sound: true, key: 'sfx_tap', url: 'AllSounds/sounds/sfx_tap.mp3' },
+    { sound: true, key: 'en_male_everyone_close', url: 'AllSounds/male/en_male_everyone_close.mp3' },
+    { sound: true, key: 'en_male_everyone_wake', url: 'AllSounds/male/en_male_everyone_wake.mp3' }
 ];
+var CheckCount = { FM: false, EN: false };
 function LoadGroup(G) {
     Isloading = true;
     GameRef.load.onFileComplete.removeAll();
     GameRef.load.onFileComplete.add(LoadingProgress, this);
+    GameRef.load.onFileError.add(LoadingError, this);
     for (var i = 0; i < G.length; i++) {
         //load atlas
         if (G[i].Atlas) {
-            GameRef.load.atlas(G[i].key, G[i].url, G[i].urlj);
+            if (GameRef.cache.checkImageKey(G[i].key)) {
+                return;
+            }
+            else {
+                GameRef.load.atlas(G[i].key, G[i].url, G[i].urlj);
+            }
         }
         else if (G[i].sound) {
-            GameRef.load.audio(G[i].key, G[i].url, true);
+            /// <reference path="AboutSounds.ts"/>
+            if (GameRef.cache.checkImageKey(G[i].key)) {
+                return;
+            }
+            var originnalKey = G[i].key;
+            var CurrentKey = G[i].key;
+            var WeHaveChange = false;
+            if (CurrentKey.indexOf("female") != -1 || CurrentKey.indexOf("male") != -1 && G[i].url.indexOf("sounds") == -1) {
+                if (EXTS.indexOf(CurrentKey) == -1) {
+                    if (CurrentKey.indexOf("female") != -1) {
+                        G[i].url = G[i].url.replace("female", "male");
+                        CurrentKey = CurrentKey.replace("female", "male");
+                        WeHaveChange = true;
+                    }
+                    else if (CurrentKey.indexOf("male") != -1) {
+                        G[i].url = G[i].url.replace("male", "female");
+                        CurrentKey = CurrentKey.replace("male", "female");
+                        WeHaveChange = true;
+                    }
+                    //  console.log("chcking for",CurrentKey);
+                    if (EXTS.indexOf(CurrentKey) == -1) {
+                        // this :   //AllSounds/fr/fr_female_minion_wake.mp3
+                        //become :  // AllSounds/female/minion_wake.mp3
+                        //  G[i].url = G[i].url.replace()
+                        G[i].url = G[i].url.replace("" + Language + "/" + Language + "_", "");
+                        if (G[i].url.indexOf("female") != -1) {
+                            G[i].url = G[i].url.replace("female", Gender + "/en_" + Gender);
+                        }
+                        else if (G[i].url.indexOf("male") != -1) {
+                            G[i].url = G[i].url.replace("male", Gender + "/en_" + Gender);
+                        }
+                        //  console.log(" just use English",G[i].url);
+                        WeHaveChange = true;
+                    }
+                }
+                if (WeHaveChange) {
+                    console.log("Changes >>>>>>>>>>>", originnalKey, "   :   ", G[i].url);
+                }
+                else {
+                    console.log("File exist ", originnalKey);
+                }
+            }
+            GameRef.load.audio(originnalKey, G[i].url, true);
         }
         else if (G[i].image) {
-            GameRef.load.image(G[i].key, G[i].url);
+            if (GameRef.cache.checkImageKey(G[i].key)) {
+                return;
+            }
+            else {
+                GameRef.load.image(G[i].key, G[i].url);
+            }
         }
     }
     GameRef.load.start();
 }
+function LoadingError(a, b) {
+    console.log("Loading Error", b);
+}
 function LoadingProgress(progress, cacheKey, success, totalLoaded, totalFiles) {
-    // console.log('success :',success);
-    console.log(progress);
     if (progress == 100) {
         Isloading = false;
     }
@@ -140,7 +218,9 @@ function removeLoaderStars() {
         GameRef.state.start(AutoNextState);
         AutoNextState = null;
     }
+    //console.log(AutoPlaySounds);
     if (AutoPlaySounds) {
+        // console.log("playing sound for ",AutoPlaySounds);
         SR.PlaySequence(AutoPlaySounds);
         AutoPlaySounds = null;
     }
@@ -250,10 +330,10 @@ function MyImage(name) {
         }
     }
 }
-var SelectedCrads = [];
+var SelectedCrads = ["minion"];
 function AddCard(card_name) {
     SelectedCrads.push(card_name);
-    console.log(SelectedCrads);
+    //console.log(SelectedCrads);
     RunUpdate = true;
 }
 function removeCard(card_name) {
@@ -261,7 +341,7 @@ function removeCard(card_name) {
     if (index > -1) {
         SelectedCrads.splice(index, 1);
     }
-    console.log(SelectedCrads);
+    //console.log(SelectedCrads);
     RunUpdate = true;
 }
 function CheckSelectedCrads() {
@@ -412,10 +492,12 @@ function Translate(Word) {
     return result;
 }
 function ScaleTextWidth(TXT, MaxWidth) {
+    var SC = 1;
     if (TXT.width > MaxWidth) {
-        var SC = MaxWidth / TXT.width;
+        SC = MaxWidth / TXT.width;
         TXT.scale.set(SC, SC);
     }
+    return SC;
 }
 function AddBreakAt(TXT, BreakAt) {
     var spl = [];
@@ -444,5 +526,15 @@ function AddBreakAt(TXT, BreakAt) {
     var Result = spl.join(" ");
     // console.log("Result ",Result);
     return Result;
+}
+//Finding out how many times an array element appears
+function countInArray(array, what) {
+    var count = 0;
+    for (var i = 0; i < array.length; i++) {
+        if (array[i] === what) {
+            count++;
+        }
+    }
+    return count;
 }
 NewLanguage("en");
