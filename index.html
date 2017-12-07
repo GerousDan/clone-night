@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>One Night</title>
+
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1, IE=9">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Phaser App">
+    <meta name="viewport" content="initial-scale=1 maximum-scale=1 user-scalable=0 minimal-ui">
+   <link rel="stylesheet" href="One%20Night_files/stylesheet.css" type="text/css">
+
+
+ <script src="One%20Night_files/papaparse.js"></script>
+    <script src="One%20Night_files/phaser.js"></script>
+    <script src="One%20Night_files/AboutSounds.js"></script>
+     <script src="One%20Night_files/Config.js"></script>
+      <script src="One%20Night_files/app.js"></script>
+       <script src="One%20Night_files/boot.js"></script>
+       <script src="One%20Night_files/StarLoader.js"></script>
+       <script src="One%20Night_files/DraggableSprite.js"></script>
+       <script src="One%20Night_files/VOL.js"></script>
+       <script src="One%20Night_files/Icon.js"></script>
+       <script src="One%20Night_files/ScrollerMenuV.js"></script>
+       <script src="One%20Night_files/ContinueButton.js"></script>
+       <script src="One%20Night_files/SoundReader.js"></script>
+       <script src="One%20Night_files/HomeMenu.js"></script>
+       <script src="One%20Night_files/List.js"></script>
+       <script src="One%20Night_files/ItemMenu.js"></script>
+       <script src="One%20Night_files/Narration.js"></script>
+       <script src="One%20Night_files/GameTimer.js"></script>
+       <script src="One%20Night_files/RoleTimer.js"></script>
+       <script src="One%20Night_files/Background.js"></script>
+       <script src="One%20Night_files/OtherOptions.js"></script>
+       <script src="One%20Night_files/ScrollabelText.js"></script>
+       <script src="One%20Night_files/Settings.js"></script>
+       <script src="One%20Night_files/PlayState.js"></script>
+        <script src="One%20Night_files/Main.js"></script>
+       
+     
+  
+</head>
+<body><div class="fontLoader" style="font-family: Kabel;">-</div>
+<div id="gameCanvas" align="center"><canvas width="640" height="1136" style="display: block; touch-action: none; -moz-user-select: none; width: 444px; height: 788px;"></canvas></div>
+
+
+<script>
+var game;
+
+window.onload = function () {
+
+
+    
+// Parse local CSV file
+Papa.parse('data/background.csv', {
+	download: true,
+	step: function(row) {
+   // console.log("Row:", row.data);
+    var Ta =[];
+    Ta.push(row.data);
+    BCA.push(Ta[0][0][0]);
+	},
+	complete: function() {
+		//console.log("background.csv ready",BCA);
+        //console.log(BCA[0][0][0]);
+       // console.log(BCA[1][0][0]);
+	}
+});
+
+// Parse local CSV file
+Papa.parse('data/Frames.csv', {
+	download: true,
+	step: function(row) {
+	//	console.log("Row:", row.data);
+    FramesA.push(row.data)
+	},
+	complete: function() {
+		//console.log("Frames.csv ready",FramesA);
+       // console.log(FramesA[0][0]);
+        //console.log(FramesA[1][0]);
+	}
+});
+
+
+
+// Parse local CSV file
+Papa.parse('data/Order.csv', {
+	download: true,
+	step: function(row) {
+	//	console.log("Row:", row.data);
+    OrderA.push(row.data)
+	},
+	complete: function() {
+		console.log("Order.csv ready",OrderA);
+        console.log("Header",OrderA[0][0]);
+        console.log("Line 4",OrderA[4][0]);
+	}
+});
+
+
+
+
+// Parse local CSV file
+Papa.parse('data/Sets.csv', {
+	download: true,
+	step: function(row) {
+	//	console.log("Row:", row.data);
+    SetsA.push(row.data)
+	},
+	complete: function() {
+		console.log("Sets.csv ready",SetsA);
+        game = new SimpleGame();
+	}
+});
+
+
+
+    
+};
+
+ </script>
+
+
+
+</body></html>
