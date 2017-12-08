@@ -1,0 +1,13 @@
+﻿,if,
+player1,,Player 1
+player2,,Player 2
+player3,,Player 3
+player4,players>3,Player 4
+player5,players>4,Player 5
+player6,players>5,Player 6
+player7,players>6,Player 7
+player8,players>7,Player 8
+player9,players>8,Player 9
+player10,players>9,Player 10
+player11,players>10,Player 11
+player12,players>11,Player 12

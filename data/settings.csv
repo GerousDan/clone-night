@@ -1,0 +1,40 @@
+﻿Developer,bézier  games,
+Moto,the new classics,
+Series,one night,
+,Episode,ultimate warewolf
+Narration,,
+,Voice,male
+,,female
+,,gender specific
+,Volume,0-10
+Background,NONE,
+,CRICKETS,
+,ALIEN,background_alien.mp3
+,CARDS,background_cards.mp3
+,DISCO,background_disco.mp3
+,DRAMATIC,background_dramatic.mp3
+,FANTASY,background_fantasy.mp3
+,HORROR,background_horror.mp3
+,POP,background_pop.mp3
+,ROCK,background_rock.mp3
+,ROMP,background_romp.mp3
+,SOUTHERN ROCK,background_southern.mp3
+,SPAGHETTI,background_spaghetti.mp3
+,TENSE,background_tense.mp3
+,UPBEAT,background_upbeat.mp3
+,WOLVES,background_wolves.mp3
+,50s ROMP,
+,Volume,0-10
+Game timer,,
+,1 minute warning,1min
+,30 second warning,30sec
+,Mins,1-30
+Role timer,,
+,2x complex roles,complex
+,Secs,0-30
+Other,,
+,lone wolf,lone
+,labels,labels
+,move your card,wiggle
+,expert mode,expert
+,verbose doppelganger,verbose

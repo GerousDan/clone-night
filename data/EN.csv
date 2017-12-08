@@ -1,0 +1,255 @@
+﻿1_Minute,1 Minute
+Repeat,Repeat
+Repeat_1P,Repeat 1P
+May_Not_Speak,May Not Speak
+Face_Away,Face Away
+Steal,Steal
+View_1,View 1
+View_2,View 2
+Reveal,Reveal
+Dual_View,Dual View
+Two_Hand_Vote,Two Hand Vote
+Dual_Shuffle,Dual Shuffle
+Vote_for_App,Vote for App
+Repeat_Role,Repeat Role
+I_am_an_Alien,I am an Alien
+Alien_Team,Alien Team
+Werewolf_Team,Werewolf Team
+Vampire_Team,Vampire Team
+Alien_Exch,Alien Exch
+Exchange,Exchange
+Center,Center
+Ripple,Ripple
+Even_Odd,Even Odd
+Player_Num,Player Num
+Number,Number
+View,View
+All_View,All View
+Stare,Stare
+Left,Left
+Right,Right
+Show,Show
+New_Alien,New Alien
+Alien_Helper,Alien Helper
+Pretend,Pretend
+Idiot,Idiot
+1_Card,1 Card
+2_Cards,2 Cards
+3_cards,3 Cards
+Think,Think
+Good_Looking,Good Looking
+Suspicious,Suspicious
+Smells,Smells
+Sharp,Sharp
+Awesome,Awesome
+Everyone_Else,Everyone Else
+Smartest,Smartest
+Friendliest,Friendliest
+Funniest,Funniest
+Winner,Winner
+Like,Like
+Don_t_Think,Don't Think
+Nicest,Nicest
+any2even,any two Even Players.
+any2odd,any two Odd Players.
+any2players,any two Players.
+evenplayers,Even Players
+oddplayers,Odd Players
+everyone,EVERYONE
+anyeven,any Even Player
+anyodd,any Odd Player
+anyplayer,any Player
+center,the Center
+higher,any Player with a number higher than yours
+lower,any Player with a number lower than yours
+rightneighbor,the neighbor on your right
+leftneighbor,the neighbor on your left
+eitherneighbor,one of your neighbors
+yourself,yourself
+bothneighbors,both of your neighbors
+2higher,any two players with numbers higher than yours 
+2lower,any two players with numbers lower than yours 
+2rightneighbors,the two players immediately to your right 
+2leftneighbors,the two players immediately to your left 
+female_random_1,"One night to rule them all, one night to find them"
+female_random_2,"One night at the Oasis, Cactus is our friend"
+female_random_3,Eric Summerer is such a tease
+female_random_4,4 out of 5 dentists recommend villagers to their patients who are werewolves
+female_random_5,Everyone keep your eyes closed and wiggle your butts around.
+female_random_6,"Werewolf, their wolf, their Castle"
+female_random_7,"Hey Ash, what you playin? One Night Ultimate Werewolf"
+female_random_8,"Doppleganger, if you viewed the Doppleganger, if you viewed the Doppleganger, if you viewed the Doppleganger, if you viewed the Doppleganger, if you viewed the Doppleganger, if you viewed the Doppleganger"
+female_random_9,"I really don't know what my role is now and yeah, I would lie but I really don’t know how."
+female_random_10,"Stormtroopers, wake up and start looking for those droids."
+female_random_11,"Someone saved my life last night, sugarbear."
+female_random_12,I want to rock and roll one night and party everyday. I want to rock and roll one night and party everyday.
+female_random_13,"Does it ever drive you crazy,  just how fast one night changes."
+female_random_14,"I need you one night, cos im not sleeping, theres something about you girl that makes me sweat."
+female_random_15,Its been a hard one night and ive been working like a dog.
+female_random_16,"Dammit Jim, Im a Doctor, not a werewolf."
+female_random_17,"In to every generation of villagers more, one girl in all the world, a chosen one, she alone will weild the strength and skill to fight the vampires, werewolves and the forces of darkness."
+female_random_18,"Oh wow, uh this is awkward, someone just totally cheated, I don’t want to name names but they know who they are."
+female_random_19,"Fun Fact: No, not in the game, in real life, discuss amongst yourself."
+female_random_20,"What is that smell, oh did you? Oh you did, didn’t you."
+female_random_21,"Would you mind sharing one night together woahh, oh yeah."
+male_random_1,3...2...1... VOTE! Just Kidding
+male_random_2,"Be afraid, Be very afraid."
+male_random_3,Grissly ghouls from every tomb are closing in to seal your doom
+male_random_4,"He did the mash, it caught on in a flash"
+male_random_5,"Hold on a minute, you with your eyes open, that’s cheating."
+male_random_6,Fun Fact: Hot Dogs are 30% Villagers
+male_random_7,I know who the werewolves are!
+male_random_8,"I love this game, and I love all of you for playing it."
+male_random_9,I saw a werewolf with a chinese menu in his hand.
+male_random_10,"In One Night, no one can hear you scream"
+male_random_11,"Instead of voting for a player you wish to kill, point at a player you wish to kill."
+male_random_12,Just when you thought it was safe to play another game of one night.
+male_random_13,Longest night ever.
+male_random_14,One more night cos I can't wait forever
+male_random_15,"One night fever, one night fever. We know how to do it."
+male_random_16,One night ultimate werewolf and the world is your oyster.
+male_random_17,"Revved up like a duece, another runner in one night."
+male_random_18,"The resistance is futile, you will be assimilated in to one night."
+male_random_19,They're heeeerrreeee
+male_random_20,Villagers are part of a nutricious breakfast
+nostradamus_teamstart,Nostradamus is on the 
+nostradamus_team_werewolf,werewolf team.
+nostradamus_team_villager,villager team.
+nostradamus_team_vampire,vampire team.
+nostradamus_team_tanner,tanner team.
+nostradamus_team_synthetic,synthetic team.
+nostradamus_team_mortician,mortician team.
+nostradamus_team_doppelganger,doubleganger team.
+nostradamus_team_blob,blob team.
+nostradamus_team_assassin,assasin team.
+nostradamus_team_app_assassin,apprentice assassin team.
+nostradamus_team_alien,alien team.
+blob_1pleft,"BLOB, the player to your left"
+blob_1pright,"BLOB, the player to your right"
+blob_4pend, is now part of the blob. Keep him and yourself alive in order to win.
+blob_eachside,"BLOB, one player on each side of you"
+blob_is_end, is now part of the blob. Keep them and yourself alive in order to win.
+blob_2eachside,"BLOB, two players on each side of you"
+blob_2pleft,"BLOB, the two players to your left"
+blob_2pright,"BLOB, the two players to your right"
+blob_3pleft,"BLOB, the three players to your left"
+blob_3pright,"BLOB, the three players to your right"
+blob_4pleft,"BLOB, the four players to your left"
+blob_4pright,"BLOB, the four players to your right"
+blob_are_end, are now part of the blob. Keep them and yourself alive in order to win.
+.,.
+",",","
+alien_alienhelper,", put a fist out. ALIENS, tap one of the fists. The player who was tapped is now on the alien team but is not an alien."
+alien_allview,All aliens together may view a card from 
+alien_left,Give your card to the Alien on your left.
+alien_newalien,", put a fist out. ALIENS, tap one of the fists and turn that player into an alien."
+alien_right,Give your card to the Alien on your right.
+alien_show,Show your Alien card to the other Aliens.
+alien_stare,Just stair at each other.
+alien_timer,You have shortened the game timer by one half.
+alien_view,Each alien may secretly view a card from 
+bodysnatcher_center,steal a card from the Center.
+bodysnatcher_end,. Your new card is now on the alien team.
+bodysnatcher_pretend,pretend to steal a card but don't.
+bodysnatcher_steal,steal a non-alien's card from 
+bothneighbors,both of your neighbors.
+empath_awesome,", keep your eyes closed and point in the direction of the player you think is the empath."
+empath_dontthink,", keep your eyes closed and point in the direction of the player you think is relly good looking."
+empath_everyoneelse,", keep your eyes closed and point in the direction of the player you think is the most suspicious."
+empath_friendliest,", keep your eyes closed and point in the direction of a player who smells really good."
+empath_funniest,", keep your eyes closed and point in the direction of a player you think is a sharp dresser."
+empath_goodlooking,", keep your eyes closed and point in the direction of the player who is awesome."
+empath_like,", keep your eyes closed and point in the direction of the player you think everyone else is pointing at."
+empath_nicest,", keep your eyes closed and point in the direction of the smartest player."
+empath_sharp,", keep your eyes closed and point in the direction of the friendliest player."
+empath_smartest,", keep your eyes closed and point in the direction of the funniest player."
+empath_smells,", keep your eyes closed and point in the direction of the player who will win this game."
+empath_suspicious,", keep your eyes closed and point in the direction of the player you really, really like."
+empath_think,", keep your eyes closed and point in the direction of a player you don't think anyone else will point at."
+empath_winner,", keep your eyes closed and point in the direction of the nicest player."
+everyone_fistsaway,"EVERYONE, put your fists away."
+exposer_flip1,…and flip one of the center cards over.
+exposer_flip2,…and flip two of the center cards over.
+exposer_flip3,…and flip three of the center cards over.
+mortician_1card,You may look at a card from 
+mortician_2cards,You may look at both cards from 
+mortician_pretend,Pretend to look at someone's card.
+oracle_aliencard,Congratulation. Your card is now an alien card.
+oracle_alienexchange,Would you like to force the aliens to exchange cards?
+oracle_alienexchange_yes,When the aliens wake up they will have to exchange cards.
+oracle_alienkeep,"Okey, the aliens have to keep their cards."
+oracle_alienteam,Would you like to join the alien team?
+oracle_centerexchange,Would you like to exchange your card with one from the center?
+oracle_centerexchange_yes,"Okey, ORACLE, go ahead and exchange your card with one from the center."
+oracle_even,The Oracle has an even number.
+oracle_evenodd,Do you have an even or odd player number?
+oracle_keepcard,What's so bad about being an Oracle? Keep your card.
+oracle_killoracle,"Wrong. You're clearely a terrible Oracle. Everyone else, your winning conditions have changed. You win if the Oracle dies. Oracle, you only win if you don't die."
+oracle_number,What number am I thinking of? 1 2 3 4 5 6 7 8 9 10
+oracle_odd,The Oracle has an odd number.
+oracle_openeyes,"You really are an Oracle, because that was indeed the number I was thinking of. For the rest of the night you may keep your eyes open."
+oracle_ripple,Would you like to guarantee a ripple?
+oracle_ripple_yes,"Okey, there will be ripple at the end of the night."
+oracle_sameteam,I bet you would but for now you are still an Oracle and on the villager team.
+oracle_vampirecard,Congratulation. Your card is now a vampire card.
+oracle_vampireteam,Would you like to join the vimpire team?
+oracle_view1,Three is way too many. You may look at one of them.
+oracle_view2,Three is one too many. You may look at two of them.
+oracle_view3,"That's crazy, but go ahead and look at all three of them."
+oracle_view3center,Would you like to view all three center cards? YES NO
+oracle_viewotherplayer,"No no, you can't view that card. Instead, view the card of "
+oracle_viewplayer,What player number would you like to view?
+oracle_viewplayer_yes,Excellent choice. Go ahead and view the card of 
+oracle_villagerteam,Good for you. Stay on the villager team.
+oracle_werewolfcard,Congratulation. Your card is now a werewolf card.
+oracle_werewolfteam,Would you like to join the werewolf team?
+oracle_whynot,"Seriously? Why not? Okey, whatever."
+psychic_view1,You may view one card from 
+psychic_view2,You may view two cards from 
+rascal_drunk,You must exchange your card with a card from 
+rascal_drunkend,", but you may not view your new card."
+rascal_idiot,"You may move everyones' card but your own to the right, or move everyones' card but your own to the left."
+rascal_robber,You may steal a card from 
+rascal_robberend,", giving your card to that player. View your new card; you are now that role, but you will not wake up if that role is called later in the night."
+rascal_troublemaker,You may exchange cards between 
+rascal_witch,You may view a card from 
+rascal_witchend,". If you do, you must give that card to any player."
+ripple_1minute,You will only have one minute before you have to vote.
+ripple_app,"When it is time to vote, you may vote for the app instead of a player. If the app receives the most votes, no one is killed."
+ripple_doublevote,", when it is time to vote, use two hands to point, with each hand counting as one vote."
+ripple_drunk,", you must exchange card with a card from "
+ripple_drunk_end,. But you may not look at either card
+ripple_dualseer,", together you may view one card from "
+ripple_dualshuffle1,", show your cards to each other. Then give both to"
+ripple_dualshuffle2,", shuffle both cards face down, give one to "
+ripple_dualshuffle3, and place the other in front of yourself
+ripple_iamalien,", from now until the vote, you may only say this phrase: ""I am an alien."""
+ripple_insomniac,", You may secretly view your own card"
+ripple_nospeak,", You may not speak until after the vote."
+ripple_repeat,"You've entered a time loop, and must repeat the entire night."
+ripple_repeat_notwake,Some roles may not wake up during the time loop.
+ripple_repeat1p,"You've entered a time loop, and must repeat the entire night."
+ripple_repeat1p_end,", Keep your eyes open from this point forward."
+ripple_revealer,", you may turn over one card from "
+ripple_revealer_end,". If that card is on the Village team, leave it face up. Otherwise, turn it back over face down"
+ripple_robber,", you may steal a card from "
+ripple_robber_end,". If you do, look at your new card"
+ripple_rolerepeat,", you get to repeat your night action. Whatever you did when you woke up before, do it again right now."
+ripple_seer1,", you may view one card from "
+ripple_seer2,", you may view two cards from "
+ripple_shame,", You must face away from the table until after the vote."
+ripple_troublemaker,", you may exchange cards between "
+ripple_troublemaker_end,. Do not look at either card
+ripple_witch,", you may view one center card. If you do, you must give it to "
+timer_1min,1 MINUTE WARNING
+timer_30sec,30 SECOND WARNING
+nostradamus_close,"NOSTRADAMUS, close your eyes."
+nostradamus_wake,"NOSTRADAMUS, wake up."
+oracle_close,"ORACLE, close your eyes."
+oracle_wake,"ORACLE, wake up and answer the following question:"
+ripple_intro,There has been a ripple in the space time continuum.
+and, and 
+or, or 
+andand,", and "
+oror,", or "
+plus,".\n\n(PAUSE for * seconds)+EVERYONE, close your eyes."

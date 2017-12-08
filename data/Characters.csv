@@ -1,0 +1,60 @@
+﻿character,en,female,villagers,marks,werewolves,anywolves,vampires,aliens,anyaliens,badguys,exchangers
+oracle,Oracle,1,1,0,0,0,0,0,0,0,0
+copycat,Copycat,0,1,0,0,0,0,0,0,0,0
+doppelganger,Doppelganger,1,1,0,0,0,0,0,0,0,0
+vampire,Vampire,0,0,1,0,0,1,0,0,1,0
+count,The Count,0,0,1,0,0,1,0,0,1,0
+master,The Master,0,0,0,0,0,1,0,0,1,0
+renfield,Renfield,0,0,1,0,0,0,0,0,0,0
+diseased,Diseased,1,1,1,0,0,0,0,0,0,0
+cupid,Cupid,1,1,1,0,0,0,0,0,0,0
+instigator,Instigator,1,1,1,0,0,0,0,0,0,0
+priest,Priest,0,1,1,0,0,0,0,0,0,0
+assassin,Assassin,0,0,1,0,0,0,0,0,0,0
+appassassin,Appr Assassin,1,0,1,0,0,0,0,0,0,0
+sentinel,Sentinel,0,1,0,0,0,0,0,0,0,0
+alien,Alien,0,0,0,0,0,0,1,1,1,0
+synthetic,Synthetic,1,0,0,0,0,0,1,1,1,0
+cow,Cow,1,1,0,0,0,0,0,0,0,0
+groob,Groob,1,0,0,0,0,0,0,1,1,0
+zerb,Zerb,1,0,0,0,0,0,0,1,1,0
+bodysnatcher,Body Snatcher,0,0,0,0,0,0,1,1,1,0
+werewolf,Werewolf,0,0,0,1,1,0,0,0,1,0
+alphawolf,Alpha Wolf,0,0,0,1,1,0,0,0,1,1
+mysticwolf,Mystic Wolf,0,0,0,1,1,0,0,0,1,0
+minion,Minion,0,0,0,0,0,0,0,0,0,0
+apptanner,Appr Tanner,0,0,0,0,0,0,0,0,0,0
+leader,Leader,0,1,0,0,0,0,0,0,0,0
+mason,Mason,0,1,0,0,0,0,0,0,0,0
+thing,Thing,0,1,0,0,0,0,0,0,0,0
+seer,Seer,1,1,0,0,0,0,0,0,0,0
+appseer,Apprentice Seer,1,1,0,0,0,0,0,0,0,0
+pi,P.I.,0,1,0,0,0,0,0,0,0,0
+marksman,Marksman,0,1,0,0,0,0,0,0,0,0
+nostradamus,Nostradamus,0,0,0,0,0,0,0,0,0,0
+psychic,Psychic,1,1,0,0,0,0,0,0,0,0
+robber,Robber,0,1,0,0,0,0,0,0,0,1
+witch,Witch,1,1,0,0,0,0,0,0,0,1
+pickpocket,Pickpocket,0,1,0,0,0,0,0,0,0,0
+troublemaker,Troublemaker,1,1,0,0,0,0,0,0,0,1
+vidiot,Village Idiot,0,1,0,0,0,0,0,0,0,1
+auraseer,Aura Seer,1,1,0,0,0,0,0,0,0,0
+gremlin,Gremlin,0,1,0,0,0,0,0,0,0,1
+rascal,Rascal,0,1,0,0,0,0,0,0,0,0
+drunk,Drunk,0,1,0,0,0,0,0,0,0,0
+insomniac,Insomniac,1,1,0,0,0,0,0,0,0,0
+squire,Squire,0,0,0,0,0,0,0,0,0,0
+beholder,Beholder,1,1,0,0,0,0,0,0,0,0
+revealer,Revealer,0,1,0,0,0,0,0,0,0,0
+exposer,Exposer,0,1,0,0,0,0,0,0,0,0
+empath,Empath,1,1,0,0,0,0,0,0,0,0
+curator,Curator,0,1,0,0,0,0,0,0,0,0
+blob,Blob,0,0,0,0,0,0,0,0,0,0
+mortician,Mortician,0,0,0,0,0,0,0,0,0,0
+villager,Villager,0,1,0,0,0,0,0,0,0,0
+hunter,Hunter,0,1,0,0,0,0,0,0,0,0
+tanner,Tanner,0,0,0,0,0,0,0,0,0,0
+dreamwolf,Dreamwolf,0,0,0,0,1,0,0,0,1,0
+bodyguard,Bodyguard,0,1,0,0,0,0,0,0,0,0
+prince,Prince,0,1,0,0,0,0,0,0,0,0
+cursed,Cursed,0,1,0,0,0,0,0,0,0,0
