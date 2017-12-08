@@ -1,0 +1,180 @@
+{"frames": {
+
+"cards_03.png":
+{
+	"frame": {"x":1,"y":1,"w":289,"h":370},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":289,"h":370},
+	"sourceSize": {"w":289,"h":370}
+},
+"cards_11.png":
+{
+	"frame": {"x":292,"y":1,"w":284,"h":375},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":284,"h":375},
+	"sourceSize": {"w":284,"h":375}
+},
+"cards_04.png":
+{
+	"frame": {"x":578,"y":1,"w":316,"h":379},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":316,"h":379},
+	"sourceSize": {"w":316,"h":379}
+},
+"cards_05.png":
+{
+	"frame": {"x":896,"y":1,"w":300,"h":380},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":300,"h":380},
+	"sourceSize": {"w":300,"h":380}
+},
+"cards_20.png":
+{
+	"frame": {"x":1198,"y":1,"w":298,"h":382},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":298,"h":382},
+	"sourceSize": {"w":298,"h":382}
+},
+"cards_19.png":
+{
+	"frame": {"x":1498,"y":1,"w":231,"h":383},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":231,"h":383},
+	"sourceSize": {"w":231,"h":383}
+},
+"cards_15.png":
+{
+	"frame": {"x":1731,"y":1,"w":282,"h":387},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":282,"h":387},
+	"sourceSize": {"w":282,"h":387}
+},
+"cards_08.png":
+{
+	"frame": {"x":1,"y":390,"w":271,"h":391},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":271,"h":391},
+	"sourceSize": {"w":271,"h":391}
+},
+"cards_14.png":
+{
+	"frame": {"x":274,"y":390,"w":283,"h":393},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":283,"h":393},
+	"sourceSize": {"w":283,"h":393}
+},
+"cards_12.png":
+{
+	"frame": {"x":559,"y":390,"w":230,"h":397},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":230,"h":397},
+	"sourceSize": {"w":230,"h":397}
+},
+"cards_21.png":
+{
+	"frame": {"x":791,"y":390,"w":301,"h":398},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":301,"h":398},
+	"sourceSize": {"w":301,"h":398}
+},
+"cards_07.png":
+{
+	"frame": {"x":1094,"y":390,"w":308,"h":400},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":308,"h":400},
+	"sourceSize": {"w":308,"h":400}
+},
+"cards_13.png":
+{
+	"frame": {"x":1404,"y":390,"w":239,"h":400},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":239,"h":400},
+	"sourceSize": {"w":239,"h":400}
+},
+"cards_02.png":
+{
+	"frame": {"x":1645,"y":390,"w":364,"h":400},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":364,"h":400},
+	"sourceSize": {"w":364,"h":400}
+},
+"cards_18.png":
+{
+	"frame": {"x":1,"y":792,"w":231,"h":401},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":231,"h":401},
+	"sourceSize": {"w":231,"h":401}
+},
+"cards_17.png":
+{
+	"frame": {"x":234,"y":792,"w":276,"h":404},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":276,"h":404},
+	"sourceSize": {"w":276,"h":404}
+},
+"cards_09.png":
+{
+	"frame": {"x":512,"y":792,"w":229,"h":406},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":229,"h":406},
+	"sourceSize": {"w":229,"h":406}
+},
+"cards_06.png":
+{
+	"frame": {"x":743,"y":792,"w":226,"h":407},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":226,"h":407},
+	"sourceSize": {"w":226,"h":407}
+},
+"cards_10.png":
+{
+	"frame": {"x":971,"y":792,"w":276,"h":407},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":276,"h":407},
+	"sourceSize": {"w":276,"h":407}
+},
+"cards_16.png":
+{
+	"frame": {"x":1249,"y":792,"w":304,"h":407},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":304,"h":407},
+	"sourceSize": {"w":304,"h":407}
+},
+"cards_01.png":
+{
+	"frame": {"x":1555,"y":792,"w":290,"h":407},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":290,"h":407},
+	"sourceSize": {"w":290,"h":407}
+}},
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "card2.png",
+	"format": "RGBA8888",
+	"size": {"w":2014,"h":1200},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:3235c95d0304f72db3dec35e9ef67fa6:412e461f4ce3e445d7969976c8192b42:447db12fd0a7dec1ca80facbbaaf1129$"
+}
+}
