@@ -1,0 +1,174 @@
+--German Translation (DE) 3.0.7
+
+--Main Menu:
+Timer = Timer
+Background_but = Geräusch
+privacy_imprint = Impressum / Datenschutz
+
+--Settings:
+Narration = Erzähler
+Background = Hintergrundgeräusche
+Game Timer = Timer (Spiel)
+Role Timer = Timer (Rollen)
+Other = Weitere
+Edit = ändern
+Learn more about One Night Ultimate Werewolf = Mehr Informationen zu Werwölfe Vollmondnacht.
+
+--Volume (abbreviation):
+vol = vol.
+
+--Minutes (abbreviation):
+min = min.
+
+--Seconds (abbreviation):
+sec = sek.
+
+--Narration:
+off = aus
+male = männlich
+female = weiblich
+gender = Geschlecht
+Gender Specific = Geschlechtsspezifisch
+language = Sprache
+
+--Background:
+crickets = Grillenzirpen
+cards = Karten
+upbeat = Unbesiegt
+disco = Disco
+rock = Rock
+pop = Pop
+wolves = Wölfe
+dramatic = Dramatisch
+fantasy = Fantasy
+horror = Horror
+spaghetti = Spagetti
+tense = Spannung
+
+--Game Timer:
+1 Minute Warning = Warnsignal ( 1 Minute)
+30 Second Warning = Warnsignal (30 Sekunden)
+Mins = Min.
+
+--Role Timer:
+Double First Doppelganger = Doppelgängerin hat doppelte Zeit.
+Double Doppel = Doppelg. doppelt
+Secs = Sek.
+2x Complex Roles = Doppelg. doppelt
+
+--Other:
+Other Options = Weitere Optionen
+Lone = Einsam
+Lone Wolf = Einsamer Wolf
+Labels = Namen anzeigen
+Move Your Card = Karte bewegen
+Move = Karte...
+
+--Help:
+One Night Ultimate Werewolf App Version = Werwölfe Vollmondnacht App Version
+
+--Play:
+PAUSE for = Pause: 
+seconds = Sekunden
+
+--Countdown:
+Vote Now = Jetzt abstimmen!
+Time = Verbleibende Zeit
+Remaining Before Vote = bis zur Abstimmung
+One Minute Remaining! = Noch eine Minute!
+Only 30 Seconds Left! = Nur noch 30 Sekunden!
+
+--Buttons:
+Play = Start
+Back = Zurück
+Help = Hilfe
+Main = Menü
+Stop = Stop
+Pause = Pause
+Resume = Fortsetzen
+
+--Character Names:
+werewolf = Werwolf
+seer = Seherin
+robber = Räuber
+minion = Günstling
+insomniac = Schlaflose
+troublemaker = Unruhestifterin
+doppelganger = Doppelgängerin
+alphawolf = Alphawolf
+appseer = Junger Seher
+drunk = Betrunkener
+mason = Freimaurer
+mysticwolf = Sehender Wolf
+pi = Geisterjäger
+vidiot = Dorftrottel
+sentinel = Wache
+dreamwolf = Traumwolf
+revealer = Aufklärer
+witch = Hexe
+curator = Kurator
+villager = Dorfbewohner
+hunter = Jäger
+tanner = Gerber
+bodyguard = Bodyguard
+auraseer = Wahrsagerin
+princepromo = Prinz
+
+--Narration:
+werewolf_wake = Werwölfe, wacht auf und seht euch nach anderen Werwölfen um.
+werewolf_close = Werwölfe, schließt eure Augen.
+seer_wake = Seherin, wach auf. Du darfst dir entweder die Karte eines Mitspielers oder zwei Karten aus der Mitte ansehen.
+seer_close = Seherin, schließ deine Augen.
+robber_wake = Räuber wach auf. Du darfst deine Karte mit der eines Mitspielers vertauschen. Schau dir deine neue Karte danach an.
+robber_close = Räuber schließ deine Augen.
+minion_wake = Günstling, wach auf. Werwölfe, hebt eure Daumen, damit der Günstling sehen kann, wer ihr seid.
+minion_thumb = Werwölfe, senkt eure Daumen wieder.
+minion_close = Günstling, schließ deine Augen.
+insomniac_wake = Schlaflose, wach auf und schau dir deine Karte an.
+insomniac_close = Schlaflose, schließ deine Augen.
+troublemaker_wake = Unruhestifterin, wach auf. Du darfst die Karten von zwei Mitspielern vertauschen.
+troublemaker_close = Unruhestifterin, schließ deine Augen.
+doppelganger_wake = Doppelgängerin, wach auf und schau dir die Karte eines Mitspielers an. Du nimmst nun diese Rolle an. Wenn deine neue Rolle eine Nachtaktion besitzt, führe sie jetzt durch.
+doppelganger_close = Doppelgängerin, schließ deine Augen.
+alphawolf_wake = Alphawolf, wach auf und vertausche die Werwolfkarte aus der Mitte mit der Karte eines Mitspielers.
+alphawolf_close = Alphawolf, schließ deine Augen.
+appseer_wake = Junger Seher, wach auf. Du darfst dir eine Karte aus der Mitte ansehen.
+appseer_close = Junger Seher, schließ deine Augen.
+drunk_wake = Betrunkener, wach auf und vertausch deine Karte mit einer aus der Mitte.
+drunk_close = Betrunkener, schließ deine Augen.
+mason_wake = Freimaurer, wacht auf und seht euch nach dem anderen Freimaurer um.
+mason_close = Freimaurer, schließt eure Augen.
+mysticwolf_wake = Sehender Wolf, wach auf. Du darfst dir die Karte eines Mitspielers ansehen.
+mysticwolf_close = Sehender Wolf, schließ deine Augen.
+pi_wake = Geisterjäger, wach auf. Du darfst dir bis zu zwei Karten deiner Mitspieler ansehen. Wenn du einen Werwolf oder Gerber aufdeckst, darfst du keine weitere Karte mehr ansehen und wirst sofort selbst zu einem Werwolf oder Gerber.
+pi_close = Geisterjäger, schließ deine Augen.
+vidiot_wake = Dorftrottel, wach auf. Du darfst alle Karten - außer deiner eigenen - nach links oder nach rechts schieben.
+vidiot_close = Dorftrottel, schließ deine Augen.
+sentinel_wake = Wache, wach auf. Du darfst ein Schild auf der Karte eines Mitspielers platzieren.
+sentinel_close = Wache, schließ deine Augen.
+revealer_wake = Aufklärer, wach auf. Du darfst die Karte eines Mitspielers aufdecken. Nur wenn du einen Werwolf oder Gerber aufdeckst, verdeckst du die Karte anschließend wieder.
+revealer_close = Aufklärer, schließ deine Augen.
+witch_wake = Hexe, wach auf. Du darfst dir eine Karte aus der Mitte ansehen. Wenn du das tust, musst du diese Karte mit der Karte eines Mitspielers vertauschen.
+witch_close = Hexe, schließ deine Augen.
+curator_wake = Kurator, wach auf. Du darfst ein Artefakt verdeckt auf die Karte eines Mitspielers legen.
+curator_close = Kurator, schließ deine Augen.
+auraseer_wake = Wahrsagerin, wach auf. Alle, die bereits eine Karte verschoben oder angesehen haben, heben jetzt ihre Daumen.
+auraseer_thumbs = Senkt alle eure Daumen wieder.
+auraseer_close = Wahrsagerin, schließ deine Augen.
+doppelganger_minion = Bist du nun ein Günstling, halte deine Augen offen. Ansonsten schließ sie. Werwölfe, hebt eure Daumen, damit der Doppelgänger-Günstling sehen kann, wer ihr seid.
+doppelganger_ww_thumb = Werwölfe, senkt eure Daumen wieder.
+werewolf_lonewolf_option = Du bist alleine, Werwolf? Dann darfst du eine Karte aus der Mitte ansehen.
+werewolf_dreamwolf_wake = Alle Werwölfe außer dem Traumwolf, wacht auf und seht euch nach anderen Werwölfen um. Traumwolf, heb deinen Daumen.
+werewolf_dreamwolf_thumb = Traumwolf, senk deinen Daumen wieder.
+doppelganger_auraseer = Doppelgängerin, wenn du die Rolle der Wahrsagerin angenommen hast, wach auf. Alle, die bereits eine Karte verschoben oder angesehen haben, heben nun ihre Daumen.
+doppelganger_ev_thumbs = Senkt alle eure Daumen wieder.
+doppelganger_insomniac = Doppelgängerin, wenn du die Rolle der Schlaflosen angenommen hast, wach auf und schau dir deine Karte an.
+doppelganger_curator = Doppelgängerin, wenn du die Rolle des Kurators angenommen hast, wach auf. Du darfst ein verdeckt auf die Karte eines Mitspielers legen, auf der sich noch keins befindet.
+doppelganger_revealer = Doppelgängerin, wenn du die Rolle des Aufklärers angenommen hast, öffne deine Augen. Du darfst die Karte eines Mitspielers aufdecken. Wenn du einen Werwolf oder Gerber aufdeckst, verdeckst du die Karte anschließend wieder.
+everyone_close = Schließt nun alle eure Augen.
+everyone_wiggle = Lasst alle eure Augen geschlossen. Nehmt eure Karte und bewegt sie leicht.
+everyone_wake = Wacht nun alle auf.
+everyone_timeisup_321vote = Die Zeit ist um. Stimmt nun alle ab! 3...2...1... JETZT!
+easteregg_really = Wartet, ihr habt wirklich ALLE Rollen ausgewaehlt?! Ich habe eigentlich Besseres zu tun, und ihr bestimmt auch… Aber sei's drum, los geht's!
+easteregg_weirdos = Wow!
+ = 

@@ -1,0 +1,133 @@
+--SPANISH Translation (ES) 2.6.6
+
+--Main Menu:
+Show Daybreak Roles = Mostrar los roles de Amanecer
+Timer = Tiempo
+Background_but = Ambientacion
+
+--Settings:
+Narration = Narracion
+Background = Ambientacion
+Game Timer = Tiempo de juego
+Role Timer = Tiempo de Roles
+Other = Otros
+Edit = Editar
+Learn more about One Night Ultimate Werewolf = Aprende mas sobre Una Noche, EL Hombre Lobo
+
+--Volume (abbreviation):
+vol = vol
+
+--Minutes (abbreviation):
+min = min
+
+--Seconds (abbreviation):
+sec = seg
+
+--Narration:
+off = fuera
+male = masculino
+female = femenino
+gender = Genero
+Gender Specific = Genero Especifico
+daybreak = amanecer
+Female Daybreak = Amanecer Femenino
+language = Idioma
+
+--Background:
+crickets = grillos
+cards = cartas
+upbeat = optimista
+disco = disco
+rock = rock
+pop = pop
+wolves = lobos
+dramatic = dramatico
+fantasy = fantasia
+horror = terror
+spaghetti = spaghetti
+tense = tension
+
+--Game Timer:
+1 Minute Warning = Aviso 1 minuto
+30 Second Warning = Aviso 30 segundos
+Mins = Mins
+
+--Role Timer:
+Double First Doppelganger = Dobla primer Cambiaformas
+Double Doppel = Doble Cambia
+Secs = Segs
+
+--Other:
+Other Options = Otras Opciones
+Lone = Solo
+Lone Wolf = Lobo Solitario
+Labels = Etiquetas
+Move Your Card = Mueve Tu Carta
+Move = Mover
+
+--Help:
+One Night Ultimate Werewolf App Version = Version App Una Noche, El Hombre Lobo
+
+--Play:
+PAUSE for = PAUSA de
+seconds = segundos
+
+--Countdown:
+Vote Now = Votad Ahora
+Time = Tiempo
+Remaining Before Vote = Restante antes de la votacion
+One Minute Remaining! = Queda Un Minuto!
+Only 30 Seconds Left! = Quedan solo 30 segundos!
+
+--Buttons:
+Play = Jugar
+Back = Atras
+Help = Ayuda
+Main = Principal
+Stop = Stop
+Pause = Pausa
+Resume = Reanudar
+ 
+--Character Names:
+doppelganger = Cambiaformas
+werewolf = Hombre Lobo
+minion = Esbirro
+mason = Mason
+seer = Vidente
+robber = Ladron
+troublemaker = Follonera
+drunk = Borracho
+insomniac = Insomne
+villager = Aldeano
+hunter = Cazador
+tanner = Curtidor
+
+--Narration:
+werewolf_wake = Hombres Lobo, despertad y buscad a vuestros companeros.
+werewolf_close = Hombres Lobo, cerrad los ojos.
+seer_wake = Vidente, despierta. Puedes mirar la carta de otro jugador o dos de las del centro.
+seer_close = Vidente, cierra los ojos.
+robber_wake = Ladron, despierta. Puedes intercambiar tu carta con la de otro jugador y luego mirar tu nueva carta.
+robber_close = Ladron, cierra los ojos.
+minion_wake = Esbirro, despierta. Hombres Lobo, levantad el pulgar para que el Esbirro pueda ver quienes sois.
+minion_thumb = Hombres lobo, bajad el pulgar.
+minion_close = Esbirro, cierra los ojos.
+insomniac_wake = Insomne, despierta y mira tu carta.
+insomniac_close = Insomne, cierra los ojos.
+troublemaker_wake = Follonera, despierta. Puedes intercambiar las cartas entre otros dos jugadores.
+troublemaker_close = Follonera, cierra los ojos.
+doppelganger_wake = Cambiaformas, despierta y mira la carta de otro jugador. A partir de ahora, pasas a ser este personaje. Si tu nuevo personaje debe ejecutar una accion durante la noche, hazlo ahora.
+doppelganger_close = Cambiaformas, cierra los ojos.
+drunk_wake = Borracho, despierta e intercambia tu carta con una de las del centro.
+drunk_close = Borracho, cierra los ojos.
+mason_wake = Masones, despertaos y buscad a vuestro companero.
+mason_close = Masones, cerrad los ojos.
+doppelganger_insomniac = Cambiaformas, si has visto la carta de la Insomne despierta y mira tu carta.
+doppelganger_minion = Si ahora eres un Esbirro, manten los ojos abiertos. Sino, cierralos. Hombres lobo levantad el pulgar para que el Cambiaformas-Esbirro pueda saber quienes sois.
+doppelganger_ww_thumb = Hombres lobo, bajad el pulgar.
+werewolf_lonewolf_option = Si solo hay un Hombre Lobo puede mirar una carta del centro de la mesa.
+everyone_close = Todo el mundo, cerrad los ojos.
+everyone_wiggle = Todo el mundo, mantened los ojos cerrados, alcanzad vuestra carta y movedla levemente.
+everyone_wake = Todo el mundo, despertad.
+everyone_timeisup_321vote = El tiempo ha finalizado! Todo el mundo...tres, dos, uno, A VOTAR!
+ = 

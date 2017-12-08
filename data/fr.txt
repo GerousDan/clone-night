@@ -1,0 +1,180 @@
+--French Translation (FR) 3.0.6
+
+--Main Menu:
+Show Daybreak Roles = Ajouter les rôles de Daybreak
+Timer = Timer
+Background_but = Sons
+privacy_imprint = À propos / Confidentialité
+
+--Settings:
+Narration = Narration
+Background = Sons d'ambiance
+Game Timer = Durée du timer
+Role Timer = Délai entre les rôles
+Other = Autre
+Edit = Modifier
+Learn more about One Night Ultimate Werewolf = En savoir plus sur Loup-Garou pour Une Nuit
+
+--Volume (abbreviation):
+vol = Vol.
+
+--Minutes (abbreviation):
+min = Min.
+
+--Seconds (abbreviation):
+sec = Sec.
+
+--Narration:
+off = Off
+male = Homme
+female = Femme
+gender = Mixte
+Gender Specific = Mixte différencié
+daybreak = Daybreak
+Female Daybreak = Daybreak - Femme
+language = Langue
+
+--Background:
+crickets = Criquets
+cards = Cartes
+upbeat = Joyeuse
+disco = Disco
+rock = Rock
+pop = Pop
+wolves = Loups
+dramatic = Dramatique
+fantasy = Fantasy
+horror = Horreur
+spaghetti = Western
+tense = Suspense
+
+--Game Timer:
+1 Minute Warning = Rappel 1 minute
+30 Second Warning = Rappel 30 secondes
+Mins = Min.
+
+--Role Timer:
+Double First Doppelganger = Doubler le délai pour le Doppelgänger
+Double Doppel = Doubler Doppel.
+Secs = Sec.
+2x Complex Roles = Doubler Doppel.
+
+--Other:
+Other Options = Autres options
+Lone = Solo
+Lone Wolf = Loup Solitaire
+Labels = Afficher les noms
+Daybreak Roles = Rôles de Daybreak
+Aura = Diseuse de bonne aventure
+Aura Seer = Diseuse de bonne aventure
+Move Your Card = Bougez votre carte
+Move = Bougez carte
+
+--Help:
+One Night Ultimate Werewolf App Version = Loup-Garou pour Une Nuit App Version
+
+--Play:
+PAUSE for = Pause
+seconds = Secondes
+
+--Countdown:
+Vote Now = Voter maintenant
+Time = Temps
+Remaining Before Vote = restant avant de voter
+One Minute Remaining! = Il ne reste qu'une minute!
+Only 30 Seconds Left! = Plus que 30 secondes!
+
+--Buttons:
+Play = Jouer
+Back = Précédent
+Help = Aide
+Main = Menu
+Stop = Stop
+Pause = Pause
+Resume = Reprendre
+
+--Character Names:
+werewolf = Loup-Garou
+seer = Voyante
+robber = Voleur
+minion = Sbire
+insomniac = Insomniaque
+troublemaker = Noiseuse
+doppelganger = Doppelgänger
+alphawolf = Loup Alpha
+appseer = Apprentie Voyante
+drunk = Soûlard
+mason = Franc-Maçon
+mysticwolf = Loup Shaman
+pi = Chasseur de fantôme
+vidiot = Idiot du village
+sentinel = Sentinelle
+dreamwolf = Loup Rêveur
+revealer = Divinateur
+witch = Sorcière
+curator = Conservateur
+villager = Villageois
+hunter = Chasseur
+tanner = Tanneur
+bodyguard = Loup Rêveur
+auraseer = Diseuse de bonne aventure
+princepromo = Prince
+
+--Narration:
+werewolf_wake = Loups-Garous, réveillez-vous et regardez s'il y a d'autres Loups-Garous en jeu.
+werewolf_close = Loups-Garous, fermez les yeux.
+seer_wake = Voyante, réveillez-vous. Vous pouvez regarder la carte d'un autre joueur ou deux cartes au centre.
+seer_close = Voyante, fermez les yeux.
+robber_wake = Voleur, réveillez-vous. Vous pouvez échanger votre carte avec celle d'un autre joueur.
+robber_close = Voleur, fermez les yeux.
+minion_wake = Sbire, réveillez-vous. Loups-Garous, levez votre pouce pour que le Sbire puisse vous identifier.
+minion_thumb = Loups-Garous, rabaissez votre pouce.
+minion_close = Sbire, fermez-les yeux.
+insomniac_wake = Insomniaque réveillez-vous et regardez votre carte.
+insomniac_close = Insomniaque, fermez les yeux.
+troublemaker_wake = Noiseuse, réveillez-vous. Vous pouvez échanger les cartes de 2 autres joueurs.
+troublemaker_close = Noiseuse, fermez les yeux.
+doppelganger_wake = Doppelgänger, réveillez-vous et regardez la carte d'un autre joueur. Désormais son rôle est aussi le vôtre. Si ce nouveau rôle implique une action nocturne, faites-là maintenant.
+doppelganger_close = Doppelgänger, fermez les yeux.
+alphawolf_wake = Loup Alpha, réveillez-vous et échangez la carte au centre de la table avec celle d'un autre joueur.
+alphawolf_close = Loup Alpha, fermez les yeux.
+appseer_wake = Apprentie Voyante, réveillez-vous. Vous pouvez regarder une des cartes au centre.
+appseer_close = Apprentie Voyante, fermez les yeux.
+drunk_wake = Soûlard, réveillez-vous et échanger votre carte avec une du centre.
+drunk_close = Soûlard, fermez les yeux.
+mason_wake = Franc-Maçon, réveillez-vous et identifiez l'autre Franc-Maçon.
+mason_close = Franc-Maçon, fermez les yeux.
+mysticwolf_wake = Loup Shaman, réveillez-vous. Vous pouvez regarder la carte d'un autre joueur.
+mysticwolf_close = Loup Shaman, fermez les yeux.
+pi_wake = Chasseur de fantôme, réveillez-vous. Vous pouvez regarder jusqu'à 2 cartes d'autres joueurs. Si vous découvrez un Loup-Garou ou un Tanneur, vous ne pouvez plus regarder d'autre carte et devenez un Loup-Garou ou un Tanneur.
+pi_close = Chasseur de fantôme, fermez les yeux.
+vidiot_wake = Idiot du village, réveillez-vous. Vous pouvez décaler la carte de tous les joueurs, excepté la votre, d'une place sur la droite ou la gauche.
+vidiot_close = Idiot du village, fermez les yeux.
+sentinel_wake = Sentinelle, réveillez-vous. Vous pouvez placer un jeton bouclier sur la carte d'un autre joueur.
+sentinel_close = Sentinelle, fermez les yeux.
+revealer_wake = Divinateur, réveillez vous. Vous pouvez retourner la carte d'un autre joueur face visible. Si cette carte est un Loup-Garou ou un Tanneur, remettez-la face cachée.
+revealer_close = Divinateur, fermez les yeux.
+witch_wake = Sorcière, réveillez-vous. Vous pouvez regarder une des cartes au centre. Si vous le faite, vous devez échanger cette carte avec celle d'un autre joueur.
+witch_close = Sorcière, fermez les yeux.
+curator_wake = Conservateur, réveillez-vous. Vous pouvez placer un jeton Artefact face cachée, sur la carte de n'importe quel joueur.
+curator_close = Conservateur, fermez les yeux.
+auraseer_wake = Diseuse de bonne aventure, réveillez-vous. Tous ceux qui ont déjà bougé ou regardé une carte, levez-votre pouce.
+auraseer_thumbs = Tout le monde, rabaissez votre pouce.
+auraseer_close = Diseuse de bonne aventure, réveillez-vous.
+doppelganger_minion = Doppelgänger, si vous avez vu la carte du Pickpocket, réveillez-vous. Vous pouvez échanger votre marque contre celle d'un autre joueur puis regarder votre nouvelle marque.
+doppelganger_ww_thumb = Loups-Garous, rabaissez votre pouce.
+werewolf_lonewolf_option = S'il n'y a qu'un seul Loup-Garou, vous pouvez regarder une carte au centre.
+werewolf_dreamwolf_wake = Tous les Loups-Garous, à l'exception du Loup Rêveur, réveillez-vous et regardez s'il y a d'autres Loups-Garous en jeu. Loup Rêveur levez votre pouce.
+werewolf_dreamwolf_thumb = Loup Rêveur rabaissez votre pouce.
+doppelganger_auraseer = Doppelgänger, si vous avez vu la carte de la Diseuse de bonne aventure, réveillez-vous. Tous ceux qui ont déjà bougé ou regardé une carte, levez-votre pouce.
+doppelganger_ev_thumbs = Tout le monde, rabaissez votre pouce.
+doppelganger_insomniac = Doppelgänger, si vous avez vu la carte de l'Insomniaque, réveillez-vous et regardez votre carte.
+doppelganger_curator = Doppelgänger, si vous avez vu la carte du Conservateur, réveillez-vous. Vous pouvez placer un jeton Artefact face cachée, sur la carte de n'importe quel joueur qui n'en a pas encore.
+doppelganger_revealer = Doppelgänger, si vous avez vu la carte du Divinateur, réveillez-vous. Vous pouvez retourner la carte d'un autre joueur. Si cette carte est un Loup-Garou ou un Tanneur, remettez-la face cachée.
+everyone_close = Tout le monde, fermez les yeux
+everyone_wiggle = Tout le monde, en gardant les yeux fermés, cherchez votre carte sur la table. Bougez-là et déplacez-là légèrement tout en la laissant devant vous.
+everyone_wake = Tout le monde, réveillez-vous
+everyone_timeisup_321vote = C'est fini, les jeux sont faits! Tout le monde, 3...2...1... VOTEZ!
+easteregg_really = Vraiment? Vous avez sélectionné TOUS les rôles? Non mais j'ai certainement mieux à faire et vous aussi ... Bon d'accord, allons y !
+easteregg_weirdos = Wow!
+ = 

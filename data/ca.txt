@@ -1,0 +1,133 @@
+--CATALAN Translation (CA) 2.6.6
+
+--Main Menu:
+Show Daybreak Roles = Mostrar los roles de Amanecer
+Timer = Temps
+Background_but = Ambientacion
+
+--Settings:
+Narration = Narracio
+Background = Ambientacio
+Game Timer = Temps de joc
+Role Timer = Temps de Roles
+Other = Altres
+Edit = Editar
+Learn more about One Night Ultimate Werewolf = Apren mes sobre Una Nit, L’Home Llop
+
+--Volume (abbreviation):
+vol = vol
+
+--Minutes (abbreviation):
+min = min
+
+--Seconds (abbreviation):
+sec = seg
+
+--Narration:
+off = fora
+male = masculi
+female = femeni
+gender = Genere
+Gender Specific = Genere Especific
+daybreak = alba
+Female Daybreak = Alba femeni
+language = Idioma
+
+--Background:
+crickets = Grills
+cards = Cartes
+upbeat = optimista
+disco = disco
+rock = rock
+pop = pop
+wolves = llops
+dramatic = dramatic
+fantasy = fantasia
+horror = terror
+spaghetti = spaghetti
+tense = tensio
+
+--Game Timer:
+1 Minute Warning = Avis 1 minut
+30 Second Warning = Avis 30 segons
+Mins = Mins
+
+--Role Timer:
+Double First Doppelganger = Dobla primer Canvia-formes
+Double Doppel = Doble Canvia
+Secs = Segs
+
+--Other:
+Other Options = Altres Opcions
+Lone = Sol
+Lone Wolf = Llop Solitari
+Labels = Etiquetes
+Move Your Card = Mou La Teva Carta
+Move = Moure
+
+--Help:
+One Night Ultimate Werewolf App Version = Versio App Una Nit, L’Home Llop
+
+--Play:
+PAUSE for = PAUSA de
+seconds = segons
+
+--Countdown:
+Vote Now = Voteu Ara
+Time = Temps
+Remaining Before Vote = Restant abans de la votacio
+One Minute Remaining! = Queda Un Minut!
+Only 30 Seconds Left! = Queden nomes 30 segons!
+
+--Buttons:
+Play = Jugar
+Back = Enrere
+Help = Ajuda
+Main = Principal
+Stop = Stop
+Pause = Pausa
+Resume = Reiniciar
+
+--Character Names:
+doppelganger = Canvia-formes
+werewolf = Home Llop
+minion = Esbirro
+mason = Maso
+seer = Vident
+robber = Lladre
+troublemaker = Busca-raons
+drunk = Borratxo
+insomniac = Insomne
+villager = Vilata
+hunter = Cacador
+tanner = Blanquer
+
+--Narration:
+werewolf_wake = Homes Llop, desperteu-vos i busqueu als vostres companys.
+werewolf_close = Homes Llop, tanqueu els ulls.
+seer_wake = Vident, desperta’t. Pots mirar la carta d’un altre jugador o dues de les del centre.
+seer_close = Vident, tanca els ulls.
+robber_wake = Lladre, desperta’t. Pots intercanviar la teva carta amb la d’un altre jugador i despres mirar la teva nova carta.
+robber_close = Lladre, tanca els ulls.
+minion_wake = Esbirro, desperta’t. Homes Llop, aixequeu el polze perque l’Esbirro pugui veure qui sou.
+minion_thumb = Homes Llop, baixeu el polze.
+minion_close = Esbirro, tanca els ulls.
+insomniac_wake = Insomne, desperta’t i mira la teva carta.
+insomniac_close = Insomne, tanca els ulls.
+troublemaker_wake = Busca-raons, desperta’t. Pots intercanviar les cartes entre dos altres jugadors.
+troublemaker_close = Busca-raons, tanca els ulls.
+doppelganger_wake = Canvia-formes, desperta’t i mira la carta d’un altre jugador. A partir d’ara, passes a ser aquest personatge. Si el teu nou personatge ha d’executar una accio durant la nit, fes-ho ara.
+doppelganger_close = Canvia-formes, tanca els ulls.
+drunk_wake = Borratxo, desperta’t i intercanvia la teva carta amb una de les del centre.
+drunk_close = Borratxo, tanca els ulls.
+mason_wake = Macons, desperteu-vos i busqueu al vostre company.
+mason_close = Macons, tanqueu els ulls.
+doppelganger_insomniac = Canvia-formes, si has vist la carta de la Insomne desperta’t i mira la teva carta.
+doppelganger_minion = Si ara ets un Esbirro, continua amb els ulls oberts. Si no, tanca’ls. Homes Llop, aixequeu el polze perque la Canvia-formes-Esbirro pugui saber qui sou.
+doppelganger_ww_thumb = Homes Llop, baixeu el polze.
+werewolf_lonewolf_option = Si nomes hi ha un Home Llop aquest pot mirar una carta del centre de la taula.
+everyone_close = Tothom, tanca els ulls.
+everyone_wiggle = Tots, manteniu els ulls tancats, busqueu la vostra carta i moveu-la lleugerament.
+everyone_wake = Tots, desperteu-vos.
+everyone_timeisup_321vote = El temps ha finalitzat! Tothom...tres, dos, un, A VOTAR!
+ = 

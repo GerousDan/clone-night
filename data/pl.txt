@@ -1,0 +1,133 @@
+﻿--POLISH Translation (PL) 2.7
+
+--Main Menu:
+Timer = MINUTNIK
+Background_but = Muzyka       w tle
+GameTimer_but = Czas  gry
+
+--Settings:
+Narration = Narrator
+Background = Muzyka w tle
+Game Timer = Czas gry
+Role Timer = Czas na postać
+Other = Inne
+Edit = Edytuj
+Learn more about One Night Ultimate Werewolf = Dowiedz się więcej o Wilkołakach
+ 
+--Volume (abbreviation):
+vol = Głośn.
+
+--Minutes (abbreviation):
+min = min
+ 
+--Seconds (abbreviation):
+sec = sek
+ 
+--Narration:
+off = wyłącz
+male = mężczyzna
+female = kobieta
+gender = płeć
+Gender Specific = Odpowiednio do płci postaci
+daybreak = daybreak
+Female Daybreak = FEMALE DAYBREAK
+language = JĘZYK
+
+--Background:
+crickets = ŚWIERSZCZE
+cards = KARTY
+upbeat = RADOSNY
+disco = DISCO
+rock = ROCK
+pop = POP
+wolves = WILKI
+dramatic = DRAMATYCZNY
+fantasy = FANTASY
+horror = HORROR
+spaghetti = WESTERN
+tense = NAPIĘTY
+
+--Game Timer:
+1 Minute Warning = OSTRZEŻENIE 1 minuta
+30 Second Warning = OSTRZEŻENIE 30 sekund
+Mins = min
+
+--Role Timer:
+Double First Doppelganger = PODWÓJNY CZAS DLA SOBOWTÓRA
+Double Doppel = 2x CZAS SOBOWTÓRA
+Secs = sek
+
+--Other:
+Other Options = Ustawienia
+Lone = Samotny
+Lone Wolf = Samotny Wilk
+Labels = Etykiety
+Move Your Card = Rusz swoją kartą
+Move = rusz
+
+--Help:
+One Night Ultimate Werewolf App Version = Wilkołaki – wersja aplikacji
+
+--Play:
+PAUSE for = Pauza:
+seconds = sek.
+
+--Countdown:
+Vote Now = GŁOSUJCIE TERAZ
+Time = CZAS
+Remaining Before Vote = DO GŁOSOWANIA
+One Minute Remaining! = POZOSTAŁA 1 MINUTA
+Only 30 Seconds Left! = POZOSTAŁO 30 SEKUND
+
+--Buttons:
+Play = Zaczynamy
+Back = Wstecz
+Help = Pomoc
+Main = Menu
+Stop = STOP
+Pause = PAUZA
+Resume = WZNÓW
+
+--Character Names:
+werewolf = Wilkołak
+seer = Jasnowidz
+robber = Złodziej
+minion = Sługus
+insomniac = Lunatyk
+troublemaker = Intrygant
+doppelganger = Sobowtór
+drunk = Pijak
+mason = Mason
+villager = Wieśniak
+hunter = Myśliwy
+tanner = Garbarz
+
+--Narration:
+doppelganger_close = SOBOWTÓRZE, zamknij oczy.
+doppelganger_insomniac = SOBOWTÓRZE, jeśli oglądałeś kartę Lunatyka, przebudź się     i sprawdź swoją kartę.
+doppelganger_minion = Jeśli zostałeś Sługusem, miej oczy otwarte. W innym wypadku, zamknij oczy. Wilkołaki, wyciągnijcie kciuki do góry, aby Sobowtór Sługusa mógł zobaczyć gdzie jesteście.
+doppelganger_wake = SOBOWTÓRZE, przebudź się      i sprawdź kartę innego gracza. Od teraz jesteś tą postacią. Jeśli twoja nowa postać ma akcję specjalną, to wykonaj ją teraz.
+doppelganger_ww_thumb = WILKOŁAKI, schowajcie kciuki.
+drunk_close = PIJAKU, zamknij oczy.
+drunk_wake = PIJAKU, przebudź się i wymień swoją kartę na kartę ze środka stołu.
+everyone_close = WSZYSCY, zamknijcie oczy.
+everyone_timeisup_321vote = NADSZEDŁ CZAS! WSZYSCY! Trzy, dwa, jeden, GŁOSUJCIE!
+everyone_wake = WSZYSCY, otwórzcie oczy!
+everyone_wiggle = WSZYSCY, mając zamknięte oczy sięgnijcie do swojej karty i delikatnie nią poruszcie.
+insomniac_close = LUNATYKU, zamknij oczy.
+insomniac_wake = LUNATYKU, przebudź się             i sprawdź swoją kartę.
+mason_close = MASONI, zamknijcie oczy.
+mason_wake = MASONI, przebudźcie się           i poznajcie się.
+minion_close = SŁUGUSIE, zamknij oczy.
+minion_thumb = WILKOŁAKI, schowajcie kciuki.
+minion_wake = SŁUGUSIE, przebudź się. Wilkołaki, wyciągnijcie kciuki  w górę, aby Sługus zobaczył gdzie jesteście.
+robber_close = ZŁODZIEJU, zamknij oczy.
+robber_wake = ZŁODZIEJU, przebudź się. Możesz zamienić miejscami swoją kartę z kartą innego gracza, a potem podejrzeć swoją nową kartę.
+seer_close = JASNOWIDZU, zamknij oczy.
+seer_wake = JASNOWIDZU, przebudź się. Możesz sprawdzić kartę innego gracza albo dwie karty ze środka stołu.
+troublemaker_close = INTRYGANCIE, zamknij oczy.
+troublemaker_wake = INTRYGANCIE, przebudź się. Możesz zamienić miejscami karty dwóch innych graczy.
+werewolf_close = WILKOŁAKI, zamknijcie oczy.
+werewolf_lonewolf_option = Jeśli jesteś jedynym Wilkołakiem, sprawdź kartę na środku stołu.
+werewolf_wake = WILKOŁAKI, przebudźcie się     i poznajcie się.
+ = 

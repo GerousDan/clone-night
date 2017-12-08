@@ -1,0 +1,74 @@
+—-DUTCH Translation (nl)
+--Do not change English word or phrase to left of equals sign (=)
+--Do not use special characters; use closest standard English letter instead
+
+—-Main Menu:
+Show Daybreak Roles = Toon Dageraad Rollen
+
+--Settings:
+Narration = Verteller
+Background = Achtergrond
+Game Timer = Spel Timer
+Role Timer = Rol Timer
+Other = Overig
+Edit = Wijzig
+Learn more about One Night Ultimate Werewolf = Meer weten over 1Nacht Weerwolven & Waaghalzen
+
+--Volume (abbreviation):
+vol = vol
+
+--Minutes (abbreviation):
+min = min
+
+--Seconds (abbreviation):
+sec = sec
+
+--Narration:
+off = uit
+male = man
+female = vrouw
+gender = geslacht
+Gender Specific = Man/Vrouw
+daybreak = dageraad
+Female Daybreak = Dageraad Vrouw
+language = Taal
+
+--Background:
+crickets = krekels
+cards = kaarten
+upbeat = uptempo
+dramatic = dramatisch
+wolves = wolven
+
+--Game Timer:
+1 Minute Warning = Waarschuwing: 1 minuut
+30 Second Warning = Waarschuwing: 30 seconden
+Mins = Min
+
+--Role Timer:
+Double First Doppelganger = Dubbele Tijd Dubbelganger
+Double Doppel = Dubbel Dubbelganger
+Secs = Sec
+
+--Other:
+Other Options = Overig
+Lone = Eenzame
+Lone Wolf = Eenzame Wolf
+Labels = Titels
+Daybreak Roles = Dageraad Rollen
+Aura = Aura
+Aura Seer = Aura Ziener
+
+--Help:
+One Night Ultimate Werewolf App Version = 1Nacht Weerwolven & Waaghalzen App Versie
+
+--Play:
+PAUSE for = Pauze:
+seconds = sec
+
+--Countdown:
+Vote Now = Nu stemmen!
+Time = Tijd
+Remaining Before Vote = to Stemming
+One Minute Remaining! = Nog 1 Minuut!
+Only 30 Seconds Left! = Nog 30 Seconden!
