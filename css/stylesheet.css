@@ -1,12 +1,15 @@
-html, body {
-    position: fixed;
-    border: 0px;
-    overflow: hidden;
-    padding: 0px;
+body {
     margin: 0px 0px 0px 0px; /* the extra 1px allows the iOS inner/outer check to work */
     background: #000000;
 }
-.fontLoader {
+@font-face {
+    font-family: 'Kabel';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Kabel'), url('ITCKabelStd-Bold.woff') format('woff');
+}
+
+fontLoader {
 position: absolute;
 left: -1000px;
 visibility: hidden;
