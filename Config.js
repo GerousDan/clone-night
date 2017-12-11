@@ -34,7 +34,7 @@ var SR;
 var SFT = [true, true, false, true, true];
 //narration menu
 var Gender;
-var Narrator;
+// var Narrator;
 var CURL = "en";
 var HelpTxt;
 //set default value
@@ -42,7 +42,7 @@ SetGender("male");
 //
 function SetGender(_Gender) {
     Gender = _Gender;
-    Narrator = "en_" + 'male' + "_"; //we have only english male ( rules+names)
+    // Narrator = "en_" + 'male' + "_"; //we have only english male ( rules+names)
     if (Language == "en") {
         CURL = Gender;
     }
