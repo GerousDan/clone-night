@@ -327,7 +327,7 @@ function MyImage(name) {
         }
     }
 }
-var SelectedCrads = ["minion"];
+var SelectedCrads = ["werewolf", "werewolf", "seer", "robber", "troublemaker", "villager"];
 function AddCard(card_name) {
     SelectedCrads.push(card_name);
     //console.log(SelectedCrads);
