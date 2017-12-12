@@ -56,7 +56,7 @@ function SetGender(_Gender) {
         ]);
     }
 }
-var VOLUME = 4;
+var VOLUME = 10;
 //game timer Menu
 var GT = { bt1Selected: true,
     bt1Text: "1 Minute Warning",
@@ -69,11 +69,11 @@ var RT = {
     bt1Selected: true,
     bt1Text: "2x Complex Roles"
 };
-var Secs = 6;
+var Secs = 5;
 //Background
 var BCA = [];
-var BCaudio = "pop";
-var BCVOL = 7;
+var BCaudio = "fantasy";
+var BCVOL = 5;
 //Other options
 var OP = [
     { S: "Lone Wolf", Selected: false, Visible: true, tx: "Lone", Breaker: false },
