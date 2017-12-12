@@ -121,7 +121,7 @@ var Group1 = [
     { image: true, key: 'button_sub', url: 'images/UI/button_sub.png' },
     { image: true, key: 'bezier', url: 'images/UI/bezier.png' },
     { image: true, key: 'cards_23', url: 'images/UI/cards_23.png' },
-    { sound: true, key: 'sfx_tap', url: 'AllSounds/sounds/sfx_tap.mp3' },
+    { sound: true, key: 'sfx_tap', url: 'AllSounds/sounds/sfx_tap.wav' },
     { sound: true, key: 'en_male_everyone_close', url: 'AllSounds/male/en_male_everyone_close.mp3' },
     { sound: true, key: 'en_male_everyone_wake', url: 'AllSounds/male/en_male_everyone_wake.mp3' }
 ];
