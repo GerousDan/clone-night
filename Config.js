@@ -142,7 +142,7 @@ function LoadGroup(G) {
             }
         }
         else if (G[i].sound) {
-            /// <reference path="AboutSounds.ts"/>
+            // <reference path="AboutSounds.ts"/>
             if (GameRef.cache.checkImageKey(G[i].key)) {
                 return;
             }
