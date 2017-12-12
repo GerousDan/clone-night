@@ -30,8 +30,8 @@ var SL;
 var AutoNextState = null;
 var AutoPlaySounds;
 var SR;
-//Settings firstmenu : about the first 3 buttons
-var SFT = [true, true, false, true, true];
+//Settings firstmenu : about the first 5 buttons
+var SFT = [true, true, true, true, true];
 //narration menu
 var Gender;
 var Narrator;
