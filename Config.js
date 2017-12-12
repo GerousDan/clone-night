@@ -81,7 +81,7 @@ var OP = [
     { S: "Move Your Card", Selected: true, Visible: true, tx: "Move", Breaker: false },
     { S: "Expert Mode", Selected: false, Visible: true, tx: "Expert", Breaker: false },
     { S: "Verbose Doppelganger", Selected: true, Visible: true, tx: "Verbose", Breaker: true },
-    { S: "Randomization...", Selected: false, Visible: true, tx: "", Breaker: false },
+    { S: "Randomization...", Selected: true, Visible: true, tx: "", Breaker: false },
 ];
 var RunUpdate = false; //update play button
 var RunUpdate_Narration = false;
