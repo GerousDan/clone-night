@@ -76,12 +76,12 @@ var BCaudio = "fantasy";
 var BCVOL = 5;
 //Other options
 var OP = [
-    { S: "Lone Wolf", Selected: false, Visible: true, tx: "Lone", Breaker: false },
+    { S: "Lone Wolf", Selected: true, Visible: true, tx: "Lone", Breaker: false },
     { S: "Labels", Selected: true, Visible: true, tx: "Labels", Breaker: false },
-    { S: "Move Your Card", Selected: false, Visible: true, tx: "Move", Breaker: false },
+    { S: "Move Your Card", Selected: true, Visible: true, tx: "Move", Breaker: false },
     { S: "Expert Mode", Selected: false, Visible: true, tx: "Expert", Breaker: false },
-    { S: "Verbose Doppelganger", Selected: false, Visible: true, tx: "Verbose", Breaker: true },
-    { S: "Randomization", Selected: false, Visible: true, tx: "Randomization", Breaker: false },
+    { S: "Verbose Doppelganger", Selected: true, Visible: true, tx: "Verbose", Breaker: true },
+    { S: "Randomization...", Selected: false, Visible: true, tx: "", Breaker: false },
 ];
 var RunUpdate = false; //update play button
 var RunUpdate_Narration = false;
