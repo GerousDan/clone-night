@@ -1,6 +1,3 @@
-/// <reference path="phaser.d.ts"/>
-/// <reference path="StarLoader.ts"/>
-/// <reference path="SoundReader.ts"/>
 var anyaliens_names = ["oracle", "alien", "synthetic", "cow", "groob", "zerb", "leader", "psychic", "rascal", "exposer", "blob", "mortician"];
 var anywolves_names = ["werewolf", "alphawolf", "mysticwolf"];
 var Papa;

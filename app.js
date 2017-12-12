@@ -1,7 +1,3 @@
-/// <reference path="phaser.d.ts"/>
-/// <reference path="Boot.ts" />
-/// <reference path="Main.ts" />
-/// <reference path="Config.ts" />
 var SimpleGame = (function () {
     function SimpleGame() {
         this.game = new Phaser.Game(Config.GW, Config.GH, Phaser.AUTO, Config.DOM_PARENT_ID, { preload: this.preload, create: this.create });
