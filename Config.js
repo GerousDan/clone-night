@@ -42,7 +42,8 @@ function SetGender(_Gender) {
     Narrator = "en_" + 'male' + "_"; //we have only english male ( rules+names)
     if (Language == "en") {
         CURL = Gender;
-    } else {
+    }
+    else {
         CURL = Language;
     }
     //name in cache
@@ -57,8 +58,7 @@ function SetGender(_Gender) {
 }
 var VOLUME = 10;
 //game timer Menu
-var GT = {
-    bt1Selected: true,
+var GT = { bt1Selected: true,
     bt1Text: "1 Minute Warning",
     bt2Selected: true,
     bt2Text: "30 Second Warning"
@@ -126,7 +126,6 @@ var Group1 = [
     { sound: true, key: 'en_male_everyone_wake', url: 'AllSounds/male/en_male_everyone_wake.mp3' }
 ];
 var CheckCount = { FM: false, EN: false };
-
 function LoadGroup(G) {
     Isloading = true;
     GameRef.load.onFileComplete.removeAll();
@@ -137,10 +136,12 @@ function LoadGroup(G) {
         if (G[i].Atlas) {
             if (GameRef.cache.checkImageKey(G[i].key)) {
                 return;
-            } else {
+            }
+            else {
                 GameRef.load.atlas(G[i].key, G[i].url, G[i].urlj);
             }
-        } else if (G[i].sound) {
+        }
+        else if (G[i].sound) {
             // <reference path="AboutSounds.ts"/>
             if (GameRef.cache.checkImageKey(G[i].key)) {
                 return;
@@ -154,7 +155,8 @@ function LoadGroup(G) {
                         G[i].url = G[i].url.replace("female", "male");
                         CurrentKey = CurrentKey.replace("female", "male");
                         WeHaveChange = true;
-                    } else if (CurrentKey.indexOf("male") != -1) {
+                    }
+                    else if (CurrentKey.indexOf("male") != -1) {
                         G[i].url = G[i].url.replace("male", "female");
                         CurrentKey = CurrentKey.replace("male", "female");
                         WeHaveChange = true;
@@ -167,7 +169,8 @@ function LoadGroup(G) {
                         G[i].url = G[i].url.replace("" + Language + "/" + Language + "_", "");
                         if (G[i].url.indexOf("female") != -1) {
                             G[i].url = G[i].url.replace("female", Gender + "/en_" + Gender);
-                        } else if (G[i].url.indexOf("male") != -1) {
+                        }
+                        else if (G[i].url.indexOf("male") != -1) {
                             G[i].url = G[i].url.replace("male", Gender + "/en_" + Gender);
                         }
                         //  console.log(" just use English",G[i].url);
@@ -176,34 +179,33 @@ function LoadGroup(G) {
                 }
                 if (WeHaveChange) {
                     console.log("Changes >>>>>>>>>>>", originnalKey, "   :   ", G[i].url);
-                } else {
+                }
+                else {
                     console.log("File exist ", originnalKey);
                 }
             }
             GameRef.load.audio(originnalKey, G[i].url, true);
-        } else if (G[i].image) {
+        }
+        else if (G[i].image) {
             if (GameRef.cache.checkImageKey(G[i].key)) {
                 return;
-            } else {
+            }
+            else {
                 GameRef.load.image(G[i].key, G[i].url);
             }
         }
     }
     GameRef.load.start();
 }
-
 function LoadingError(a, b) {
     console.log("Loading Error", b);
 }
-
 function LoadingProgress(progress, cacheKey, success, totalLoaded, totalFiles) {
     if (progress == 100) {
         Isloading = false;
     }
 }
-
 function addLoaderStars() { SL = new StarLoader(GameRef); }
-
 function removeLoaderStars() {
     if (SL != null) {
         SL.destroy();
@@ -233,7 +235,6 @@ var list5 = [];
 var KEY;
 var FN;
 var FRAME;
-
 function CreateListes() {
     for (var i = 0; i < SetsA.length; i++) {
         //console.log(">>",SetsA[i][0]);
@@ -285,7 +286,6 @@ var List3Selected = false;
 var List4Selected = false;
 var List5Selected = false;
 var currentList = [];
-
 function GetCurrentList() {
     currentList = [];
     if (List1Selected) {
@@ -304,13 +304,12 @@ function GetCurrentList() {
         currentList = currentList.concat(list5);
     }
     //sort by order
-    currentList.sort(function(a, b) {
+    currentList.sort(function (a, b) {
         return a.Order - b.Order;
     });
     //check if we have to remove some seletcted cards
     CheckSelectedCrads();
 }
-
 function MyImage(name) {
     //where is my image
     for (var f = 0; f < FramesA.length; f++) {
@@ -320,7 +319,8 @@ function MyImage(name) {
             FN = parseInt(FramesA[f][0][2]) + 1;
             if (FN < 10) {
                 FRAME = "0" + FN.toString();
-            } else {
+            }
+            else {
                 FRAME = FN.toString();
             }
             break;
@@ -328,13 +328,11 @@ function MyImage(name) {
     }
 }
 var SelectedCrads = ["werewolf", "werewolf", "seer", "robber", "troublemaker", "villager"];
-
 function AddCard(card_name) {
     SelectedCrads.push(card_name);
     //console.log(SelectedCrads);
     RunUpdate = true;
 }
-
 function removeCard(card_name) {
     var index = SelectedCrads.indexOf(card_name);
     if (index > -1) {
@@ -343,7 +341,6 @@ function removeCard(card_name) {
     //console.log(SelectedCrads);
     RunUpdate = true;
 }
-
 function CheckSelectedCrads() {
     if (SelectedCrads.length == 0) {
         return;
@@ -368,7 +365,6 @@ var nltxt = [];
 var pltxt = [];
 var catxt = [];
 var TranslationArray;
-
 function NewLanguage(_Language) {
     Language = _Language;
     Sounds_Dir = Languages['en'].SD;
@@ -430,11 +426,11 @@ function NewLanguage(_Language) {
         //load the txt file about translation
         Papa.parse(fileUrl, {
             download: true,
-            step: function(row) {
+            step: function (row) {
                 //console.log("Row:", row.data);
                 TranslationArray.push(row.data);
             },
-            complete: function() {
+            complete: function () {
                 console.log("TranslationArray ready", TranslationArray.length, Language);
                 if (Language == "en") {
                     entxt = TranslationArray;
@@ -461,12 +457,12 @@ function NewLanguage(_Language) {
                 RunUpdate_Narration = true;
             }
         });
-    } else {
+    }
+    else {
         RunUpdate = true; //update play button
         RunUpdate_Narration = true;
     }
 }
-
 function Translate(Word) {
     //console.log('TranslationArray.length',TranslationArray.length);
     for (var t = 0; t < TranslationArray.length; t++) {
@@ -492,7 +488,6 @@ function Translate(Word) {
     }
     return result;
 }
-
 function ScaleTextWidth(TXT, MaxWidth) {
     var SC = 1;
     if (TXT.width > MaxWidth) {
@@ -501,7 +496,6 @@ function ScaleTextWidth(TXT, MaxWidth) {
     }
     return SC;
 }
-
 function AddBreakAt(TXT, BreakAt) {
     var spl = [];
     spl = TXT.split(" ");
