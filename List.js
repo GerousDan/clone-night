@@ -98,11 +98,13 @@ var List = (function (_super) {
                 var ind = SelectedCrads.indexOf(spC.name);
                 if (ind != -1) {
                     spC.alpha = 1;
+                    sp.alpha = 1;
                     SelectedCrads[ind] = "*"; //remove from array
                     UsedNames.push(spC.name); //save to new array
                 }
                 else {
                     spC.alpha = 0.6;
+                    sp.alpha = 0;
                 }
                 this.IconsGroup.add(spC);
             }

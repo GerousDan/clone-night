@@ -1,7 +1,3 @@
-/// <reference path="phaser.d.ts"/>
-/// <reference path="Config.ts"/>
-/// <reference path="VOL.ts"/>
-/// <reference path="ScrollerMenuV.ts"/>
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
