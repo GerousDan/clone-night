@@ -99,7 +99,7 @@ var List = (function (_super) {
                     UsedNames.push(spC.name); //save to new array
                 }
                 else {
-                    spC.alpha = 0;
+                    spC.alpha = 0.6;
                 }
                 this.IconsGroup.add(spC);
             }
