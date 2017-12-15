@@ -11,14 +11,14 @@ var List = (function (_super) {
         _super.call(this, game, 0, 0, '');
         this.Y = null;
         this.H = 0;
-        this.Yi = 197;
+        this.Yi = 130;
         this.MustTweenDown = false;
         this.MustTweenUP = false;
         this.CurrentnameCounter = -1;
         this.SoundNameIsPlaying = false;
         this.IsScrolling = false;
         this.AllT = [];
-        this.TextMaxWidth = 146;
+        this.TextMaxWidth = 130;
         console.log("-----------------------------------> List Constructor");
         this.GTstyle = { font: "bold 20px kabel", fill: "#FFFFFF", boundsAlignH: "center", boundsAlignV: "middle" };
         this.AddIcons();
@@ -77,7 +77,7 @@ var List = (function (_super) {
                 }
                 var spl = [];
                 spl = st.split(" ");
-                var TextScale = 0.95;
+                var TextScale = 1;
                 //break line
                 if (st.length > 15 && spl.length > 2) {
                     var s2 = spl[1]; // because spl[0] = ""
@@ -133,7 +133,7 @@ var List = (function (_super) {
         this.game.input.onUp.add(this.onUp, this);
     };
     List.prototype.onDown = function () {
-        if (this.game.input.y > 950 || this.game.input.y < 214) {
+        if (this.game.input.y > 960 || this.game.input.y < 210) {
             return;
         }
         //console.log("------------------- > on down",this.game.input.y);
@@ -150,7 +150,7 @@ var List = (function (_super) {
         }
         if (this.MustTweenDown) {
             // console.log("execute,MustTweenDown to ",950 - this.IconsGroup.height-52);
-            this.game.add.tween(this.IconsGroup).to({ x: this.IconsGroup.x, y: Math.floor(980 - this.IconsGroup.height - 97) }, 100, "Linear", true, 0);
+            this.game.add.tween(this.IconsGroup).to({ x: this.IconsGroup.x, y: Math.floor(980 - this.IconsGroup.height - 280) }, 100, "Linear", true, 0);
         }
     };
     List.prototype.update = function () {
@@ -188,20 +188,20 @@ var List = (function (_super) {
             if (this.IconsGroup.y + (this.game.input.y - this.Y) > 400) {
                 return;
             }
-            if (this.IconsGroup.y + this.IconsGroup.height < 800) {
+            if (this.IconsGroup.y + this.IconsGroup.height < 600) {
                 return;
             }
             this.IconsGroup.y = this.IconsGroup.y + (this.game.input.y - this.Y);
             this.Y = this.game.input.y;
             //console.log("this.IconsGroup.y",this.IconsGroup.y);
-            if (this.IconsGroup.y + this.IconsGroup.height < 980 && this.IconsGroup.height > 800) {
+            if (this.IconsGroup.y + this.IconsGroup.height < 600 && this.IconsGroup.height > 800) {
                 // console.log("limit down");
                 this.MustTweenDown = true;
             }
             else {
                 this.MustTweenDown = false;
             }
-            if (this.IconsGroup.y + this.IconsGroup.height < 980 && this.IconsGroup.height < 800) {
+            if (this.IconsGroup.y + this.IconsGroup.height < 600 && this.IconsGroup.height < 800) {
                 // console.log("case 1",this.IconsGroup.y+this.IconsGroup.height);
                 // console.log(this.IconsGroup.y,this.Yi);
                 this.MustTweenUP = true;
