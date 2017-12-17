@@ -18,7 +18,7 @@ var List = (function (_super) {
         this.SoundNameIsPlaying = false;
         this.IsScrolling = false;
         this.AllT = [];
-        this.TextMaxWidth = 130; //146;
+        this.TextMaxWidth = 146;
         console.log("-----------------------------------> List Constructor");
         this.GTstyle = { font: "bold 20px kabel", fill: "#FFFFFF", boundsAlignH: "center", boundsAlignV: "middle" };
         this.AddIcons();
@@ -41,6 +41,7 @@ var List = (function (_super) {
             for (var N = 0; N < currentList[i].N; N++) {
                 var sp = this.game.make.sprite(0, 0, currentList[i].K, currentList[i].F);
                 var img = this.game.make.sprite(0, 0, currentList[i].K, currentList[i].F);
+                sp.scale.set(0.345, 0.345);
                 sp.name = currentList[i].icon;
                 sp.events.onInputDown.add(this.splistener, this);
                 sp.events.onInputUp.add(this.removesplistener, this);
