@@ -11,14 +11,14 @@ var List = (function (_super) {
         _super.call(this, game, 0, 0, '');
         this.Y = null;
         this.H = 0;
-        this.Yi = 130; //197;
+        this.Yi = 197;
         this.MustTweenDown = false;
         this.MustTweenUP = false;
         this.CurrentnameCounter = -1;
         this.SoundNameIsPlaying = false;
         this.IsScrolling = false;
         this.AllT = [];
-        this.TextMaxWidth = 146;
+        this.TextMaxWidth = 130; //146;
         console.log("-----------------------------------> List Constructor");
         this.GTstyle = { font: "bold 20px kabel", fill: "#FFFFFF", boundsAlignH: "center", boundsAlignV: "middle" };
         this.AddIcons();
