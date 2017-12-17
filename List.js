@@ -41,7 +41,7 @@ var List = (function (_super) {
             for (var N = 0; N < currentList[i].N; N++) {
                 var sp = this.game.make.sprite(0, 0, currentList[i].K, currentList[i].F);
                 var img = this.game.make.sprite(0, 0, currentList[i].K, currentList[i].F);
-                sp.scale.set(0.345, 0.345);
+                img.scale.set(0.345, 0.345);
                 sp.name = currentList[i].icon;
                 sp.events.onInputDown.add(this.splistener, this);
                 sp.events.onInputUp.add(this.removesplistener, this);
